@@ -1,0 +1,133 @@
+.MultiCheckBox {
+    border:1px solid #e2e2e2;
+    padding: 5px;
+    border-radius:4px;
+    cursor:pointer;
+}
+
+.MultiCheckBox .k-icon{ 
+    font-size: 15px;
+    float: right;
+    font-weight: bolder;
+    margin-top: -7px;
+    height: 10px;
+    width: 14px;
+    color:#787878;
+} 
+
+.MultiCheckBoxDetail {
+    display:none;
+    position:absolute;
+    top:0;
+    border:1px solid #e2e2e2;
+    overflow-y:hidden;
+    background-color: #fff;
+    z-index: 9;
+}
+
+.MultiCheckBoxDetailBody {
+    overflow-y:scroll;
+}
+
+    .MultiCheckBoxDetail .cont  {
+        clear:both;
+        overflow: hidden;
+        padding: 2px;
+    }
+
+    .MultiCheckBoxDetail .cont:hover  {
+        background-color:#cfcfcf;
+    }
+
+    .MultiCheckBoxDetailBody > div > div {
+        float:left;
+    }
+
+.MultiCheckBoxDetail>div>div:nth-child(1) {
+}
+
+.MultiCheckBoxDetailHeader {
+    overflow:hidden;
+    position:relative;
+    height: 28px;
+    background-color:#3d3d3d;
+}
+
+    .MultiCheckBoxDetailHeader>input {
+        position: absolute;
+        top: 4px;
+        left: 3px;
+    }
+
+    .MultiCheckBoxDetailHeader>div {
+        position: absolute;
+        top: 5px;
+        left: 24px;
+        color:#fff;
+    }
+
+/*表單客製化暫用*/
+input[disabled][type="checkbox"]:checked {
+    box-shadow: none;
+    border:none;
+}
+
+/* table td span.green, table td span.red, table td span.orange {
+    min-width: 6em !important;
+} */
+
+.setting_block .upload_block {
+    width: 100%;
+}
+
+.content_block .flex-form {
+    width: 96%;
+    max-width: 96%;
+}
+
+/*避免跑版暫用*/
+div .radio_grp label input:checked ~ span:after {
+    background: none;
+}
+.table_wrapper {
+    width: 100%;
+    clear: both;
+}
+.additional .btn{
+    height: 2.5em;
+    font-size: 1em;
+}
+hr{margin-top:20px;margin-bottom:30px;}
+.login h2{text-align: center;}
+
+/*管理端條列頁友善列印用*/
+@media print{
+    header, aside, .breadcrumb{display: none;}
+    .container .title{display: none;}
+    .content_block ._head{display: none;}
+    .pagination, .control_panel, .quick_btn, .tag{display: none;}
+    .btn_grp a{display: none;}
+    th:nth-last-child(1), td:nth-last-child(1){display: none;}
+    th:nth-child(1), td:nth-child(1){display: none;}
+    th:nth-child(5), td:nth-child(5){display: none;}
+    thead {display: table-header-group;}
+}
+
+@page{
+    size: A4 landscape;
+    margin: 0.5cm;
+    orphans:4;
+    widows:2;
+}
+
+
+body:focus * {
+   box-shadow:  0 0 0 2px #c00 !important;
+   outline:solid 2px #c00 !important;
+}
+
+.dradd {
+    flex: 0 1 25% !important;
+}
+
+table.table_hover tr {line-height: 2.5em;}
