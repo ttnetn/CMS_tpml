@@ -34,14 +34,14 @@
                 <ul>
                     <li><a href="index.htm">首頁</a></li>
                     <li><a href="#">客製化管理</a></li>
-                    <li>問題轉介維護</li>
+                    <li>轉介信箱維護管理</li>
                 </ul>
             </div>
             <!-- gird section -->
             <div class="grid">
                 <div class="container">
                     <div class="title">
-                        <h2>問題轉介回覆管理</h2>
+                        <h2>轉介信箱維護管理</h2>
                         <button class="btn btn-primary btn-adv">
                             <i class="i_search"></i></button>
                     </div>
@@ -58,224 +58,197 @@
                                             <div class="form_grp">
                                                 <div class="labelEffect">
                                                     <input name="search_userid" id="search_userid" type="text" value="">
-                                                    <label>讀者問題描述 </label>
+                                                    <label>單位名稱</label>
                                                 </div>
                                             </div>
                                             <div class="form_grp">
                                                 <div class="labelEffect">
                                                     <input name="search_name" id="search_name" type="text" value="">
-                                                    <label>轉介課室</label>
-                                                </div>
-                                            </div>
-                                            <div class="form_grp">
-                                                <div class="labelEffect">
-                                                    <select id="" name="">
-                                                        <option value="" selected="" disabled="disabled">
-                                                        </option>
-                                                        <option value="1" selected>轉介時間</option>
-                                                        <option value="2">回覆時間</option>
-                                                    </select>
-                                                </div>
-                                            </div>
-                                            <div class="form_grp datepick">
-                                                <div class="startDate">
-                                                    <div class="labelEffect">
-                                                        <!--處理 Animated Labels for date/datetime-local 會卡在一起的效果-->
-                                                        <input name="" type="text" value=""
-                                                            onfocus="(this.type='datet')"
-                                                            onblur="if(!this.value) this.type='text'">
-                                                        <!--input name="" type="calendar" value="" class="calendar">
-                                                        <button class="btn"><i class="i_calendar"></i></button-->
-                                                        <label>日期(起)</label>
-                                                    </div>
-                                                    <!-- <div class="help">說明文字</div> -->
-                                                </div>
-                                                <div class="endDate">
-                                                    <div class="labelEffect">
-                                                        <input name="" type="text" value="" onfocus="(this.type='date')"
-                                                            onblur="if(!this.value) this.type='text'">
-                                                        <!--input name="" type="calendar" value="" class="calendar">
-                                                        <button class="btn"><i class="i_calendar"></i></button-->
-                                                        <label>日期(迄)</label>
-                                                    </div>
+                                                    <label>信箱</label>
                                                 </div>
                                             </div>
                                         </div>
-
-                                        <div class="btn_grp">
-                                            <button class="btn reset">取消</button>
-                                            <button class="btn btn-primary">確認</button>
-                                        </div>
+                                    </div>
+                                    <div class="btn_grp">
+                                        <button class="btn reset">取消</button>
+                                        <button class="btn btn-primary">確認</button>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <!-- flex-12 -->
-                    <div class="flex-12">
-                        <div class="col ">
+                </div>
+                <!-- flex-12 -->
+                <div class="flex-12">
+                    <div class="col ">
 
-                            <!-- 中央區塊 -->
-                            <div class="content_block">
-                                <div class="_head">
-                                    <h3>條列維護</h3>
+                        <!-- 中央區塊 -->
+                        <div class="content_block">
+                            <div class="_head">
+                                <h3>條列維護</h3>
+                            </div>
+                            <div class="_head">
+                                <!-- 頁碼 -->
+                                <div class="pagination">
+                                    <form action="" class="form_inline">
+                                        <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select
+                                                name="" id="">
+                                                <option value="">10</option>
+                                                <option value="">30</option>
+                                                <option value="">50</option>
+                                                <option value="">100</option>
+                                            </select> 筆 </div>
+                                    </form>
                                 </div>
-                                <div class="_head">
-                                    <div class="tag">
-                                        回覆狀態：
-                                        <ul>
-                                            <li class="active"><a href="#">全部</a></li>
-                                            <li><a href="#">待答覆</a></li>
-                                            <li><a href="#">未答覆</a></li>
-                                            <li><a href="#">已回覆</a></li>
-                                        </ul>
-                                        </ul>
-                                    </div>
-
-                                    <!-- 頁碼 -->
-                                    <div class="pagination">
-                                        <form action="" class="form_inline">
-                                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select
-                                                    name="" id="">
-                                                    <option value="">10</option>
-                                                    <option value="">30</option>
-                                                    <option value="">50</option>
-                                                    <option value="">100</option>
-                                                </select> 筆 </div>
-                                        </form>
-                                    </div>
-                                    <!--div class="quick_btn">
+                                <!--div class="quick_btn">
                                         <button class="btn btn-orange" onclick="window.print()"><i class="i_check"></i>列印本頁資料</button>
                                     </div-->
+                            </div>
+                            <div class="_content">
+                                <!-- 表格樣式 -->
+                                <div class="table_wrapper">
+                                    <table class="table_hover">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-left">
+                                                    <a href="#">序號<i class="i_sort"></i></a>
+                                                </th>
+                                                <th class="text-left">單位名稱</th>
+                                                <th>信箱</th>
+                                                <th>編輯</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">1</td>
+                                                <td><time>諮詢服務課</time></td>
+                                                <td>cof@email.tpml.edu.tw,coi@email.tpml.edu.tw,coj@email.tpml.edu.tw,com@email.tpml.edu.tw,cok@email.tpml.edu.tw
+                                                </td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">2</td>
+                                                <td><time>資訊室</time></td>
+                                                <td>coi@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">3</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">4</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">5</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw,cog@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">6</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw,coi@email.tpml.edu.tw,coj@email.tpml.edu.tw,com@email.tpml.edu.tw
+                                                </td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">7</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">8</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">9</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">10</td>
+                                                <td><time>秘書室</time></td>
+                                                <td>cof@email.tpml.edu.tw,cog@email.tpml.edu.tw</td>
+                                                <td>
+                                                    <div class="btn_grp">
+                                                        <a href="tpmlwebref_referralsedit.htm" class="btn"><i
+                                                                class="i_edit"></i>編輯</a>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
                                 </div>
-                                <div class="_content">
-                                    <!-- 表格樣式 -->
-                                    <div class="table_wrapper">
-                                        <table class="table_hover">
-                                            <thead>
-                                                <tr>
-                                                    <th class="text-left">
-                                                        <a href="#">序號<i class="i_sort"></i></a>
-                                                    </th>
-                                                    <th class="text-left">
-                                                        <a href="#">案件編號<i class="i_sort"></i></a>
-                                                    </th>
-                                                    <th>讀者問題描述</th>
-                                                    <th class="text-left">轉介時間</th>
-                                                    <th>轉介課室</th>
-                                                    <th>回覆館員</th>
-                                                    <th class="text-left">回覆狀態</th>
-                                                    <th class="text-left">回覆時間</th>
-                                                    <th>編輯</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td class="num">999</td>
-                                                    <td class="num">tpml-Z11</td>
-                                                    <td>
-                                                        敬啟者您好我目前正在撰寫一篇研究性的論文，題目是「公共圖書館開闢財源之研究」，想調查國內各縣市公共圖書館因經費短缺，如何增加圖書館的收入來源，不知能否提供貴館有哪些收入來源的管道以便彙整撰寫。謝謝您
-                                                    </td>
-                                                    <td><time>2024/11/15 <br>下午18:09</time></time></td>
-                                                    <td>秘書室</td>
-                                                    <td>陳館員</td>
-                                                    <td><span class="red">待答覆</span></td>
-                                                    <td><time>2024/11/16<br>下午18:09</time></time></td>
-                                                    <td>
-                                                        <div class="btn_grp">
-                                                            <a href="tpmlwebref_referralsedit.htm" class="btn"><i
-                                                                    class="i_edit"></i>編輯</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="num">998</td>
-                                                    <td class="num">tpml-Z10</td>
-                                                    <td>
-                                                        敬啟者您好我目前正在撰寫一篇研究性的論文，題目是「公共圖書館開闢財源之研究」，想調查國內各縣市公共圖書館因經費短缺，如何增加圖書館的收入來源，不知能否提供貴館有哪些收入來源的管道以便彙整撰寫。謝謝您
-                                                    </td>
-                                                    <td><time>2024/11/15 <br>下午18:09</time></time></td>
-                                                    <td>兒童室</td>
-                                                    <td>陳館員</td>
-                                                    <td><span class="orange">未答覆</span></td>
-                                                    <td><time>2024/11/16<br>下午18:09</time></time></td>
-                                                    <td>
-                                                        <div class="btn_grp">
-                                                            <a href="tpmlwebref_referralsedit.htm" class="btn"><i
-                                                                    class="i_edit"></i>編輯</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="num">997</td>
-                                                    <td class="num">tpml-Z09</td>
-                                                    <td>
-                                                        敬啟者您好我目前正在撰寫一篇研究性的論文，題目是「公共圖書館開闢財源之研究」，想調查國內各縣市公共圖書館因經費短缺，如何增加圖書館的收入來源，不知能否提供貴館有哪些收入來源的管道以便彙整撰寫。謝謝您
-                                                    </td>
-                                                    <td><time>2024/11/15 <br>下午18:09</time></time></td>
-                                                    <td>閱覽課</td>
-                                                    <td>廖館員</td>
-                                                    <td><span class="gray">已回覆</span></td>
-                                                    <td><time>2024/11/16<br>下午18:09</time></time></td>
-                                                    <td>
-                                                        <div class="btn_grp">
-                                                            <a href="#" class="btn"><i class="i_edit"></i>編輯</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="num">996</td>
-                                                    <td class="num">tpml-Z08</td>
-                                                    <td>
-                                                        敬啟者您好我目前正在撰寫一篇研究性的論文，題目是「公共圖書館開闢財源之研究」，想調查國內各縣市公共圖書館因經費短缺，如何增加圖書館的收入來源，不知能否提供貴館有哪些收入來源的管道以便彙整撰寫。謝謝您
-                                                    </td>
-                                                    <td><time>2024/11/15 <br>下午18:09</time></time></td>
-                                                    <td>閱覽課</td>
-                                                    <td>李館員</td>
-                                                    <td><span class="gray">已回覆</span></td>
-                                                    <td><time>2024/11/16 <br>下午18:09</time></time></td>
-                                                    <td>
-                                                        <div class="btn_grp">
-                                                            <a href="#" class="btn"><i class="i_edit"></i>編輯</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                                <tr>
-                                                    <td class="num">995</td>
-                                                    <td class="num">tpml-Z07</td>
-                                                    <td>
-                                                        敬啟者您好我目前正在撰寫一篇研究性的論文，題目是「公共圖書館開闢財源之研究」，想調查國內各縣市公共圖書館因經費短缺，如何增加圖書館的收入來源，不知能否提供貴館有哪些收入來源的管道以便彙整撰寫。謝謝您
-                                                    </td>
-                                                    <td><time>2024/11/15 <br>下午18:09</time></time></td>
-                                                    <td>閱覽課</td>
-                                                    <td>林館員</td>
-                                                    <td><span class="gray">已回覆</span></td>
-                                                    <td><time>2024/11/16 <br>下午18:09</time></time></td>
-                                                    <td>
-                                                        <div class="btn_grp">
-                                                            <a href="#" class="btn"><i class="i_edit"></i>編輯</a>
-                                                        </div>
-                                                    </td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- 頁碼 -->
-                                    <div class="pagination">
-                                        <ul class="page">
-                                            <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
-                                            <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
-                                            <li class="active"><a href="#">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                            <li><a href="#">...</a></li>
-                                            <li><a href="#">8</a></li>
-                                            <li><a href="#">9</a></li>
-                                            <li><a href="#">10</a></li>
-                                            <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
-                                            <li class="last"><a href="#" title="最後一頁">最後一頁 </a></li>
-                                        </ul>
-                                    </div>
+                                <!-- 頁碼 -->
+                                <div class="pagination">
+                                    <ul class="page">
+                                        <li class="first"><a href="#" title="第一頁">第一頁 </a></li>
+                                        <li class="prev"><a href="#" title="回上一頁">回上一頁 </a></li>
+                                        <li class="active"><a href="#">1</a></li>
+                                        <li><a href="#">2</a></li>
+                                        <li><a href="#">3</a></li>
+                                        <li><a href="#">...</a></li>
+                                        <li><a href="#">8</a></li>
+                                        <li><a href="#">9</a></li>
+                                        <li><a href="#">10</a></li>
+                                        <li class="next"><a href="#" title="下一頁">下一頁 </a></li>
+                                        <li class="last"><a href="#" title="最後一頁">最後一頁 </a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -283,6 +256,7 @@
                 </div>
             </div>
         </div>
+    </div>
     </div>
     <!-- JS-->
     <script src="js/jquery-3.3.1.min.js"></script>
