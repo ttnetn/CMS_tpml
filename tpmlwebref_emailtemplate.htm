@@ -104,15 +104,14 @@
                                     <h3>條列維護</h3>
                                 </div>
                                 <div class="_head">
-                                    <div class="_head">
-                                        <div class="quick_btn">
-                                            <button class="btn btn-orange"
-                                                onclick="window.location.href='tpmlwebref_emailtemplateedit.htm';"><i
-                                                    class="i_add"></i>新增</button>
-                                        </div>
+                                    <div class="tag">
+                                        狀態：
+                                        <ul>
+                                            <li class="active"><a href=" #">全部</a></li>
+                                            <li><a href="#">啟用</a></li>
+                                            <li><a href="#">未啟用</a></li>
+                                        </ul>
                                     </div>
-                                    <!-- 頁碼 -->
-                                    <!-- 批次資料處理 --><!-- 預設隱藏，有勾選check再顯示 -->
                                     <div class="control_panel">
                                         <div class="dropdown">
                                             <button class="btn dropdown-btn">
@@ -131,10 +130,10 @@
                                             </div>
                                         </div>
                                     </div>
-
                                     <div class="pagination">
                                         <form action="" class="form_inline">
-                                            <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示
+                                            <div class="total">
+                                                共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示
                                                 <select name="" id="">
                                                     <option value="">10</option>
                                                     <option value="">30</option>
@@ -143,6 +142,11 @@
                                                 </select> 筆
                                             </div>
                                         </form>
+                                    </div>
+                                    <div class="quick_btn">
+                                        <button class="btn btn-orange"
+                                            onclick="window.location.href='tpmlwebref_emailtemplateedit.htm';"><i
+                                                class="i_add"></i>新增</button>
                                     </div>
                                 </div>
                                 <div class="_content">
@@ -156,7 +160,7 @@
                                                         <a href="#">序號<i class="i_sort"></i></a>
                                                     </th>
                                                     <th class="text-left">標題名稱</th>
-                                                    <th>是未啟用啟用</th>
+                                                    <th>啟用狀態</th>
                                                     <th class="text-left">
                                                         <a href="#">編修日期<i class="i_sort"></i></a>
                                                     </th>
@@ -283,7 +287,7 @@
                                                 </tr>
                                                 <tr>
                                                     <td><input type="checkbox"></td>
-                                                    <td class="num">1</td>
+                                                    <td class="num">10</td>
                                                     <td><time>讀者5</time></td>
                                                     <td><span class="green">未啟用</span></td>
                                                     <td data-title="留言日期"><time>2024/6/24 09:20</time></td>
