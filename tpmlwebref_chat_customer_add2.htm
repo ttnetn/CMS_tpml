@@ -44,7 +44,7 @@
                         <button class="btn btn-primary btn-adv" title="點選展開或關閉搜尋區" aria-label="條件搜尋">
                             <i class="i_search"></i></button>
                     </div>
-                    <!-- flex-12 -->
+                    <!-- flex-12 搜尋區塊-->
                     <div class="flex-12">
                         <div class="adv_search">
                             <div class="col">
@@ -54,76 +54,41 @@
                                     </div>
                                     <div class="_content">
                                         <div class="flex-form flex-6-6">
+                                            <div class="form_grp">
+                                                <div class="labelEffect">
+                                                    <input name="search_userid" id="search_userid" type="text" value="">
+                                                    <label>留言內容</label>
+                                                </div>
+                                            </div>
+                                            <div class="form_grp datepick">
+                                                <div class="startDate">
+                                                    <div class="labelEffect">
+                                                        <!--處理 Animated Labels for date/datetime-local 會卡在一起的效果-->
+                                                        <input name="" type="text" value=""
+                                                            onfocus="(this.type='datetime-local')"
+                                                            onblur="if(!this.value) this.type='text'">
+                                                        <!--input name="" type="calendar" value="" class="calendar">
+                                                        <button class="btn"><i class="i_calendar"></i></button-->
+                                                        <label>時間(起)</label>
+                                                    </div>
+                                                    <!-- <div class="help">說明文字</div> -->
+                                                </div>
+                                                <div class="endDate">
+                                                    <div class="labelEffect">
+                                                        <input name="" type="text" value=""
+                                                            onfocus="(this.type='datetime-local')"
+                                                            onblur="if(!this.value) this.type='text'">
+                                                        <!--input name="" type="calendar" value="" class="calendar">
+                                                        <button class="btn"><i class="i_calendar"></i></button-->
+                                                        <label>時間(迄)</label>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                    </div>
-                                    <div class="form_grp">
-                                        <div class="labelEffect">
-                                            <select name="search_branch" id="search_branch" class="dynamicCol used">
-                                                <OPTION selected value=all>全部</OPTION>
-                                                <option value="2003">館藏查詢</option>
-                                                <option value="2003">開館與入館</option>
-                                                <option value="2004">借書與還書</option>
-                                                <option value="2004">學習與研究</option>
-                                                <option value="2004">其他類型</option>
-                                            </select>
-                                            <label>主要分類</label>
+                                        <div class="btn_grp">
+                                            <button class="btn reset">取消</button>
+                                            <button class="btn btn-primary">確認</button>
                                         </div>
-                                        <div class="labelEffect">
-                                            <select name="search_branch" id="search_branch" class="dynamicCol used">
-                                                <OPTION selected value=all>全部</OPTION>
-                                                <option value="1">館藏查詢系統及圖書預約問題</option>
-                                                <option value="2">開館日期及時間</option>
-                                                <option value="2">借還書規則</option>
-                                                <option value="2">圖書館講習</option>
-                                                <option value="2">輸入其他類型</option>
-                                            </select>
-                                            <label>次要分類</label>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="form_grp form_inline">
-                                        <div class="labelEffect">
-                                            <select id="" name="" class="dynamicCol used">
-                                                <option value="" selected="" disabled="disabled">
-                                                </option>
-                                                <option value="0" selected>請選擇</option>
-                                                <option value="1">常問問題1</option>
-                                                <option value="2">常問問題2</option>
-                                                <option value="3">常問問題3</option>
-                                                <option value="4">常問問題4</option>
-                                                <option value="5">常問問題5</option>
-                                            </select>
-                                            <label>常問問題</label>
-                                        </div>
-                                        <div class="labelEffect">
-                                            <input name="" type="text" value="請輸入輸入的問題" class="dynamicCol used">
-                                            <label>輸入的問題</label>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="form_grp">
-                                        <div class="labelEffect">
-                                            <select name="search_branch" id="search_branch" class="dynamicCol used">
-                                                <OPTION selected value=all>全部</OPTION>
-                                                <option value="2024">2024</option>
-                                                <option value="2025">2025</option>
-                                            </SELECT>
-                                            <label>留言年度</label>
-                                        </div>
-                                        <div class="labelEffect">
-                                            <select name="search_point" id="search_point" class="dynamicCol">
-                                                <option value="" disabled="disabled" selected></option>
-                                                <option value="1">1</option>
-                                                <option value="2">2</option>
-                                                <option value="2">3</option>
-                                            </select>
-                                            <label>月份</label>
-                                        </div>
-                                    </div>
-                                    <br>
-                                    <div class="btn_grp">
-                                        <button class="btn reset" title="重設輸入">取消</button>
-                                        <button class="btn btn-primary" title="確認查詢">確認</button>
                                     </div>
                                 </div>
                             </div>
@@ -139,12 +104,6 @@
                                 </div>
                                 <div class="_head">
                                     <div class="tag">
-                                        狀態：
-                                        <ul>
-                                            <li class="active"><a href=" #">全部</a></li>
-                                            <li><a href="#">公開</a></li>
-                                            <li><a href="#">不公開</a></li>
-                                        </ul>
                                     </div>
                                     <div class="control_panel">
                                         <div class="dropdown">
