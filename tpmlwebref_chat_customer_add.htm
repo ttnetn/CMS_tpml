@@ -6,11 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>W CMS Lite</title>
-    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
-    <script src="js/html5shiv.js"></script>
-    <script src="js/respond.min.js"></script>
-    <![endif]-->
-    <!-- hyUI css -->
     <link rel="stylesheet" href="css/supercms.css">
     <!-- favicon -->
     <link href="images/favicon.png" rel="icon" type="image/x-icon">
@@ -66,8 +61,8 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="index.htm">首頁</a></li>
-                    <li><a href="#">客服維護管理</a></li>
-                    <li>快速上稿</li>
+                    <li><a href="#">客服管理</a></li>
+                    <li>新增資料</li>
                 </ul>
             </div>
             <!-- gird section -->
@@ -75,7 +70,7 @@
                 <div class="container">
                     <div class="title">
                         <h2>新增資料</h2>
-                        <button class="btn" onclick="window.location.href='tpmlwebref_chat_customer.htm';">放棄</button>
+                        <button class="btn" onclick="window.location.href='tpmlwebref_chat_customer.htm';">回上一頁</button>
                     </div>
                     <div class="flex-12">
                         <div class="col">
@@ -90,8 +85,6 @@
                                 <div class="tab__content">
                                     <!--tabcontent 2--><!--單元設定-->
                                     <div class="active">
-                                        <!-- setting_block為資料上稿專用 -->
-                                        <!--tabcontent 3--><!--內容設定-->
                                         <div>
                                             <div class="form_grp">
                                                 <div class="form_title">連接RSS</div>
@@ -119,29 +112,22 @@
                                                         <div class="_content">
                                                             <!-- 自由編輯區 -->
                                                             <div class="cp user_edit" style="min-height:200px;">
-
                                                                 <textarea class="tinymce">
                                                         <p style="text-align: center;">
                                                           <img title="" src="images/style_01.png" alt="TinyMCE Logo" width="110" height="97" />
                                                         </p>
-                                                      
                                                         <h2 style="text-align: center;">WELCOME to the TinyMCE editor demo!</h2>
-                                                      
                                                         <p>
                                                           Please try out the features provided in this basic example.<br>
                                                           Note that any <strong>MoxieManager</strong> file and image management functionality in this example is part of our commercial offering – the demo is to show the integration.
                                                         </p>
-                                                      
                                                         <h2>Got questions or need help?</h2>
-                                                      
                                                         <ul>
                                                           <li>Our <a href="https://www.tinymce.com/docs/">documentation</a> is a great resource for learning how to configure TinyMCE.</li>
                                                           <li>Have a specific question? Visit the <a href="https://community.tinymce.com/forum/" target="_blank">Community Forum</a>.</li>
                                                           <li>We also offer enterprise grade support as part of <a href="www.tinymce.com/pricing">TinyMCE Enterprise</a>.</li>
                                                         </ul>
-                                                      
                                                         <h2>A simple table to play with</h2>
-                                                      
                                                         <table style="text-align: center;">
                                                           <thead>
                                                             <tr>
@@ -163,15 +149,11 @@
                                                             </tr>
                                                           </tbody>
                                                         </table>
-                                                      
                                                         <h2>Found a bug?</h2>
-                                                      
                                                         <p>
                                                           If you think you have found a bug please create an issue on the <a href="https://github.com/tinymce/tinymce/issues">GitHub repo</a> to report it to the developers.
                                                         </p>
-                                                      
                                                         <h2>Finally ...</h2>
-                                                      
                                                         <p>
                                                           Don't forget to check out our other product <a href="http://www.plupload.com" target="_blank">Plupload</a>, your ultimate upload solution featuring HTML5 upload support.
                                                         </p>
@@ -182,7 +164,6 @@
                                                             </div>
                                                         </div>
                                                         <hr>
-
                                                     </div>
                                                 </div>
                                             </div>
@@ -206,14 +187,13 @@
                                                             checked><span>公開</span></label>
                                                     <label><input name="radioStatus" type="radio"
                                                             value=""><span>不公開(隱藏)</span></label>
-                                                    <!--label><input name="radioStatus" type="radio" value=""><span>草稿</span></label-->
                                                 </div>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="btn_grp">
                                         <button class="btn btn-green">暫存</button>
-                                        <button class="btn btn-orange">確定發布</button>
+                                        <button class="btn btn-orange">發布</button>
                                     </div>
                                 </div>
                                 <div class="block">
@@ -242,7 +222,6 @@
                                             <div class="form_grp datepick">
                                                 <div class="labelEffect">
                                                     <input name="" type="datetime-local" value="2021-10-03T19:30">
-                                                    <!--button class="btn"><i class="i_calendar"></i></button-->
                                                 </div>
                                             </div>
                                         </div>
@@ -252,38 +231,12 @@
                                             <div class="form_grp datepick">
                                                 <div class="labelEffect">
                                                     <input name="" type="datetime-local" value="">
-                                                    <!--input name="" type="calendar" value="" class="calendar">
-                                                    <button class="btn"><i class="i_calendar"></i></button-->
                                                 </div>
                                             </div>
                                         </div>
                                         <hr>
                                     </div>
                                 </div>
-                                <!--hr>
-                                        <div class="form_grp">
-                                            <div class="labelEffect">
-                                                <select id="" name="" class="used">
-                                                    <option value="" selected="" disabled="disabled">請選擇</option>
-                                                    <option value="選項1">選項1</option>
-                                                    <option value="選項2">選項2</option>
-                                                    <option value="選項3">選項3</option>
-                                                    <option value="選項4">選項4</option>
-                                                    <option value="選項5">選項5</option>
-                                                </select>
-                                                <label>資料大類</label>
-                                            </div>
-                                        </div>
-                                        <hr>
-                                        <div class="form_grp">
-                                            <div class="form_title">分眾</div>
-                                            <div class="form_content">
-                                                <div class="checkbox_grp form_inline">
-                                                    <label><input name="" type="checkbox" value=""><span>分眾1</span></label>
-                                                    <label><input name="" type="checkbox" value=""><span>分眾2</span></label>
-                                                </div>
-                                            </div>
-                                        </div-->
                             </div>
                         </div>
                     </div>
