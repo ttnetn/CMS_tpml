@@ -24,7 +24,86 @@
         <!-- header load header.htm -->
         <header></header>
         <!-- aside load aside.htm -->
-        <aside></aside>
+        <aside>
+            <h1>
+                <a href="index.htm">
+                    <img src="images/tpml_logo.png" alt=""><span>北市圖主題網<br>網站管理平台</span>
+                </a>
+            </h1>
+            <a href="#aL" id="aL" title="左方導覽區塊" accesskey="L" class="accesskey" tabindex="1">:::</a>
+            <!-- menu -->
+            <nav style="height:100%;padding-bottom:0;">
+                <!-- level1 -->
+                <ul>
+                    <li>
+                        <a href="index.htm">
+                            <img src="images/icon/icon_home.svg" alt="">
+                            <span>Home</span>
+                        </a>
+                    </li>
+                    <div class="divider">功能清單</div>
+                    <li><a href="#">
+                            <img src="images/iot_icon/setting.svg" alt="">
+                            <span>系統開發</span>
+                        </a>
+                        <ul>
+                            <li><a href="codeList.htm"><span>代碼維護</span></a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#">
+                            <img src="images/iot_icon/admingrp2.svg" alt="">
+                            <span>系統管理</span>
+                        </a>
+                        <ul>
+                            <li><a href="ugrpList.htm"><span>權限群組</span></a></li>
+                            <li><a href="userList.htm"><span>使用者管理</span></a></li>
+                            <li><a href="deptEdit.htm"><span>組織架構</span></a></li>
+                            <li><a href="userLogList.htm"><span>登入紀錄查詢</span></a></li>
+                            <li><a href="userUpdate.htm"><span>個人資料檢視</span></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                            <img src="images/iot_icon/template.svg" alt="">
+                            <span>網站管理</span>
+                        </a>
+                        <ul>
+                            <li><a href="catTreeList.htm"><span>目錄樹管理管理</span></a></li>
+                            <li><a href="card_website.htm"><span>網別管理</span></a></li>
+                            <!--li><a href="card_website.htm"><span>版型管理</span></a></li-->
+                        </ul>
+                    </li>
+                    <li class="li_hasChild">
+                        <a href="#">
+                            <img src="images/iot_icon/document.svg" alt="">
+                            <span>內容管理</span>
+                        </a>
+                        <ul>
+                            <li><a href="data_list_noTree.htm"><span>快速上稿</span></a></li>
+                            <li><a href="data_list.htm"><span>單元上稿</span></a></li>
+                            <li><a href="data_list.htm"><span>資料審稿</span></a></li>
+                            <!--li><a href="media_photo.htm"><span>多媒體資源庫</span></a></li-->
+                        </ul>
+                    </li>
+                    <li><a href="#">
+                            <img src="images/iot_icon/todo.svg" alt="">
+                            <span>客製化功能</span>
+                        </a>
+                        <ul>
+                            <li><a href="tpmlwebref_questionsearch.htm"><span>(服務)讀者問題回覆管理</span></a></li>
+                            <li><a href="tpmlwebref_emailtemplate.htm"><span>(服務)公版回覆管理</span></a></li>
+                            <li><a href="tpmlwebref_referrals.htm"><span>(服務)轉介信箱管理</span></a></li>
+                            <li><a href="tpmlwebref_review.htm"><span>(服務)問題審核管理</span></a></li>
+                            <li><a href="tpmlwebref_chat_customer.htm"><span>(服務)客服管理</span></a></li>
+                            <li><a href="tpmlwebref_statistics.htm"><span>(服務)服務參考統計</span></a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <!-- 次層抽屜選單 -->
+            <!-- copyright -->
+            <div class="copyright">Copyright 2024 © Hyweb </div>
+        </aside>
         <!-- 主要內容區 -->
         <div class="content">
             <a class="accesskey" href="#aC" id="aC" accesskey="C" title="中央內容區塊">:::</a>
@@ -104,6 +183,12 @@
                                 </div>
                                 <div class="_head">
                                     <div class="tag">
+                                        狀態：
+                                        <ul>
+                                            <li class="active"><a href=" #">全部</a></li>
+                                            <li><a href="#">已處理</a></li>
+                                            <li><a href="#">未處理</a></li>
+                                        </ul>
                                     </div>
                                     <div class="control_panel">
                                         <div class="dropdown">
@@ -156,6 +241,7 @@
                                                         <a href="#"><i class="i_sort"></i>
                                                         </a>
                                                     </th>
+                                                    <th>狀態</th>
                                                     <th>IP</th>
                                                     <th>回到情境</th>
                                                 </tr>
@@ -168,6 +254,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">青鳥行動助攻拆樑行動</a>
                                                     </td>
+                                                    <td><span class="green">已處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -183,6 +270,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">16所大學網激動：看到學校上榜好感動</a>
                                                     </td>
+                                                    <td><span class="green">已處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -198,6 +286,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">圖書館館藏沒有我要的書怎麼辦</a>
                                                     </td>
+                                                    <td><span class="green">已處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -213,6 +302,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">建築大師隈研吾超壯觀書牆 </a>
                                                     </td>
+                                                    <td><span class="green">已處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -228,6 +318,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">黃仁勳掀AI浪潮 </a>
                                                     </td>
+                                                    <td><span class="green">已處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -243,6 +334,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">眾黨台中主：綠白可合</a>
                                                     </td>
+                                                    <td><span class="red">未處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -258,6 +350,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">館內是否有提供圖書影印服務？</a>
                                                     </td>
+                                                    <td><span class="red">未處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -273,6 +366,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">館內是否有免費無限上網及插座電源充電服務？</a>
                                                     </td>
+                                                    <td><span class="red">未處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -288,6 +382,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">外國人可否辦理借書證？</a>
                                                     </td>
+                                                    <td><span class="red">未處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -303,6 +398,7 @@
                                                     <td data-title=""><a href="tpmlwebref_chatmessage_1.htm"
                                                             title="檢視留言資料">館內是否有觀光旅遊等相關資訊？</a>
                                                     </td>
+                                                    <td><span class="red">未處理</span></td>
                                                     <td>192.168.100.70</td>
                                                     <td>
                                                         <div class="btn_grp">
@@ -350,7 +446,6 @@
     <script>
         // first example
         $('header').load("header.htm");
-        $('aside').load("aside_tpml.htm");
     </script>
 </body>
 
