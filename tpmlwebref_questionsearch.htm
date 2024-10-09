@@ -296,29 +296,45 @@
                                         <li class="active"><a href="#">全部</a></li>
                                         <li><a href="#">未處理</a></li>
                                         <li><a href="#">處理中</a></li>
+                                        <li><a href="#">已轉介</a></li>
                                         <li><a href="#">送陳</a></li>
                                         <li><a href="#">簽核</a></li>
-                                        <li><a href="#">修改</a></li>
                                         <li><a href="#">退文</a></li>
                                         <li><a href="#">無需處理</a></li>
-                                        <li><a href="#">已轉介</a></li>
-                                        <li><a href="#">已結案</a></li>
+                                        <li><a href="#">結案</a></li>
                                     </ul>
                                     <br>
                                     處理結果：
                                     <ul>
                                         <li class="active"><a href="#">全部</a></li>
-                                        <li><a href="#">已回覆</a></li>
                                         <li><a href="#">處理中</a></li>
+                                        <li><a href="#">已結案</a></li>
+                                        <li><a href="#">送陳</a></li>
+                                        <li><a href="#">已回覆</a></li>
+                                        <li><a href="#">已回覆90天</a></li>
                                         <li><a href="#">不予處理</a></li>
-                                        <li><a href="#">未答覆</a></li>
-                                        <li><a href="#">完全解答</a></li>
-                                        <li><a href="#">部分解答</a></li>
-                                        <li><a href="#">無法解答</a></li>
-                                        <li><a href="#">指引使用方式</a></li>
+                                        <li><a href="#">已結案</a></li>
                                     </ul>
                                 </div>
                                 <!-- 頁碼 -->
+                                <div class="control_panel">
+                                    <div class="dropdown">
+                                        <button class="btn dropdown-btn">
+                                            <i class="i_setting"></i>批次處理</button>
+                                        <div class="dropdown-content">
+                                            <ul>
+                                                <li>
+                                                    <button class="btn">
+                                                        <i class="i_add"></i>批次匯出</button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn">
+                                                        <i class="i_add"></i>批次刪除下架</button>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="pagination">
                                     <form action="" class="form_inline">
                                         <div class="total"> 共<span>308</span>筆資料，第<span>1/18</span>頁，每頁顯示 <select
@@ -342,8 +358,10 @@
                                     <table class="table_hover">
                                         <thead>
                                             <tr>
-                                                <th class="text-left">
-                                                    <a href="#">序號<i class="i_sort"></i></a>
+                                                <th><input type="checkbox"></th>
+                                                <th><a href="#">序號<i class="i_sort"></i></a></th>
+                                                </th>
+                                                <th><a href="#">文件編號<i class="i_sort"></i></a></th>
                                                 </th>
                                                 <th><a href="#">提問時間<i class="i_sort"></i></a></th>
                                                 <th class="text-center">讀者問題描述</th>
@@ -359,14 +377,18 @@
                                         </thead>
                                         <tbody>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">10</td>
+                                                <td>113-A010</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">您好：最近要預約書時發現：無法選擇圖書館（原有設定沒了，要求我選擇圖書館，但是沒有任何選項可選。判斷是有bug或我半夜是不允許操作？），所以這個選項，不論在預約下或在個人設定下，都沒有選項（圖書館list）。
                                                         請協助處理。謝謝。</a></td>
                                                 <td>應用科學</td>
-                                                <td><span class="blue">送陳</span></td>
-                                                <td><span class="green">未答覆</span></td>
+                                                <td><span class="green">未處理</span></td>
+                                                <td><span class="green">處理中
+
+                                                    </span></td>
                                                 <td><time>2024/5/15
                                                         <br>下午18:09</time></td>
                                                 <td>
@@ -377,15 +399,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">9</td>
+                                                <td>113-A009</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a
                                                         href="tpmlwebref_questionsearchnew.htm">電腦網頁版預約書籍無法選擇取書館（下拉選單空白，也沒有自動代入預設取書館）導致預約無法完成</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="orange">處理中</span></td>
-                                                <td><span class="orange">處理中</span></td>
+                                                <td><span class="green">處理中</span></td>
+                                                <td><span class="green">處理中</span></td>
 
                                                 <td><time>2024/5/15
                                                         <br>下午17:09</time></td>
@@ -397,7 +421,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">8</td>
+                                                <td>113-A008</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">借閱及預約取書期限於4/3到期者延長至4/9
@@ -405,8 +431,8 @@
                                                         謝謝</a>
                                                 </td>
                                                 <td>應用科學</td>
+                                                <td><span class="gray">已轉介</span></td>
                                                 <td><span class="gray">已結案</span></td>
-                                                <td><span class="gray">完全解答</span></td>
                                                 <td><time>2024/5/15
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -417,7 +443,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">7</td>
+                                                <td>113-A007</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">補充說明
@@ -437,8 +465,8 @@
                                                         https://www.facebook.com/photo?fbid=644109052266009&set=a.603286406348274</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="gray">已結案</span></td>
-                                                <td><span class="gray">已回覆(1天)</span></td>
+                                                <td><span class="blue">送陳</span></td>
+                                                <td><span class="blue">送陳</span></td>
                                                 <td><time>2024/5/14
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -449,7 +477,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">6</td>
+                                                <td>113-A006</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">新書通報列表，新書月份選擇2022/11，語文別選擇中文：
@@ -458,8 +488,8 @@
                                                     </a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="gray">無需處理</span></td>
-                                                <td><span class="gray">無法解答</span></td>
+                                                <td><span class="orange">簽核</span></td>
+                                                <td><span class="gray">已回覆</span></td>
                                                 <td><time>2024/5/13
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -470,7 +500,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">5</td>
+                                                <td>113-A005</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">「第85梯次好書大家讀」之得獎書單，上傳附檔前，請依類別調整「序號」，謝謝
@@ -480,8 +512,8 @@
                                                         https://www-ws.gov.taipei/001/Upload/430/relfile/41383/7541217/d9145fe6-9b88-4ecc-a768-e6c8a50a9d3f.pdf</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="gray">無需處理</span></td>
-                                                <td><span class="gray">指引使用方式</span></td>
+                                                <td><span class="orange">簽核</span></td>
+                                                <td><span class="gray">已回覆</span></td>
                                                 <td><time>2024/5/13
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -492,7 +524,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">4</td>
+                                                <td>113-A004</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">新書通報列表，新書月份選擇2022/11，語文別選擇中文：
@@ -500,8 +534,8 @@
                                                         有數筆出版年為19xx之清單，請問：新書通報之「新書」定義為何？ 謝謝</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="gray">無需處理</span></td>
-                                                <td><span class="gray">不予處理</span></td>
+                                                <td><span class="red">退文</span></td>
+                                                <td><span class="gray">處理中</span></td>
                                                 <td><time>2024/5/13
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -512,7 +546,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">3</td>
+                                                <td>113-A003</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">請問圖書館會添補已去向不明的館藏嗎？
@@ -521,8 +557,8 @@
                                                         謝謝!</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="green">簽核</span></td>
-                                                <td><span class="gray">轉介</span></td>
+                                                <td><span class="gray">無需處理</span></td>
+                                                <td><span class="gray">不予處理</span></td>
                                                 <td><time>2024/5/14
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -533,15 +569,17 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">2</td>
+                                                <td>113-A002</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a
                                                         href="tpmlwebref_questionsearchnew.htm">請問圖書館的網址https://tpml.gov.taipei/，其中的TPML是什麼的縮寫呢？T是taipei，P是public，L是library，請問M是什麼？</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="red">退文</span></td>
-                                                <td><span class="gray">轉介</span></td>
+                                                <td><span class="gray">結案</span></td>
+                                                <td><span class="gray">已結案</span></td>
                                                 <td><time>2024/5/14
                                                         <br>下午16:09</time></td>
                                                 <td>
@@ -552,7 +590,9 @@
                                                 </td>
                                             </tr>
                                             <tr>
+                                                <td><input type="checkbox"></td>
                                                 <td class="num">1</td>
+                                                <td>113-A001</td>
                                                 <td><time>2024/5/13
                                                         <br>下午18:09</time></td>
                                                 <td><a href="tpmlwebref_questionsearchnew.htm">借閱及預約取書期限於4/3到期者延長至4/9
@@ -560,8 +600,8 @@
                                                         謝謝</a>
                                                 </td>
                                                 <td>應用科學</td>
-                                                <td><span class="gray">無需處理</span></td>
-                                                <td><span class="gray">轉介</span></td>
+                                                <td><span class="gray">結案</span></td>
+                                                <td><span class="gray">已結案</span></td>
                                                 <td><time>2024/5/14
                                                         <br>下午16:09</time></td>
                                                 <td>
