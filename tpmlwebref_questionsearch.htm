@@ -183,7 +183,7 @@
                                                                 onfocus="(this.type='datetime-local')"
                                                                 onblur="if(!this.value) this.type='text'">
                                                             <!--input name="" type="calendar" value="" class="calendar">
-                                                            <button class="btn"><i class="i_calendar"></i></button-->
+                                                                            <button class="btn"><i class="i_calendar"></i></button-->
                                                             <label>時間(起)</label>
                                                         </div>
                                                         <!-- <div class="help">說明文字</div> -->
@@ -194,13 +194,22 @@
                                                                 onfocus="(this.type='datetime-local')"
                                                                 onblur="if(!this.value) this.type='text'">
                                                             <!--input name="" type="calendar" value="" class="calendar">
-                                                            <button class="btn"><i class="i_calendar"></i></button-->
+                                                                            <button class="btn"><i class="i_calendar"></i></button-->
                                                             <label>時間(迄)</label>
                                                         </div>
                                                     </div>
                                                 </div>
                                                 <div class="form_grp">
                                                     <div class="form_grp form_inline">
+                                                        <div class="labelEffect">
+                                                            <select id="" name="">
+                                                                <option value="" selected="" disabled="disabled">
+                                                                </option>
+                                                                <option value="1">not</option>
+                                                                <option value="2">or</option>
+                                                            </select>
+                                                            <label>And</label>
+                                                        </div>
                                                         <div class="labelEffect">
                                                             <select id="" name="">
                                                                 <option value="" selected="" disabled="disabled">
@@ -215,7 +224,7 @@
                                                                 <option value="10">電話</option>
                                                                 <option value="11">問題形式</option>
                                                             </select>
-                                                            <label>讀者問題描述</label>
+                                                            <label></label>
                                                         </div>
                                                     </div>
                                                     <div class="form_grp">
@@ -226,6 +235,15 @@
                                                         </div>
                                                     </div>
                                                     <div class="form_grp form_inline">
+                                                        <div class="labelEffect">
+                                                            <select id="" name="">
+                                                                <option value="" selected="" disabled="disabled">
+                                                                </option>
+                                                                <option value="1">not</option>
+                                                                <option value="2">or</option>
+                                                            </select>
+                                                            <label>And</label>
+                                                        </div>
                                                         <div class="labelEffect">
                                                             <select id="" name="">
                                                                 <option value="" selected="" disabled="disabled">
@@ -303,6 +321,10 @@
                                                 <li>
                                                     <button class="btn">
                                                         <i class="i_add"></i>批次匯出</button>
+                                                </li>
+                                                <li>
+                                                    <button class="btn">
+                                                        <i class="i_add"></i>批次刪除下架</button>
                                                 </li>
                                             </ul>
                                         </div>
