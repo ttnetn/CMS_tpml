@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W CMS Lite</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/supercms.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/github-gist.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <!--圖片批次上傳-->
+    <link rel="stylesheet" href="css/fileUpload.css">
+    <!--增加select-->
+    <link rel="stylesheet" href="css/customize.css">
+    <link rel="stylesheet" href="css/select2.min.css">
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- 主要內容區 -->
+        <div class="content">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="index.htm">首頁</a></li>
+                    <li><a href="#">員工園地管理</a></li>
+                    <li>檔案下載管理</li>
+                </ul>
+            </div>
+            <!-- gird section -->
+            <div class="grid">
+                <div class="container">
+                    <div class="title">
+                        <h2>檔案下載管理</h2>
+                        <!--button class="btn" onclick="window.location.href='data_list_noTree.htm';">放棄</button-->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="nrsch_downloadList.htm">回上一頁</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="flex-12">
+                        <div class="col">
+                            <!-- 中央區塊 -->
+                            <div class="content_block edit_block">
+                                <div class="tabBtn_block">
+                                </div>
+                                <!--頁籤區-->
+                                <div class="tab__content">
+                                    <!--tabcontent 1 -->
+                                    <div class="active">
+                                        <div class="content__wrapper">
+                                            <div class="_head">
+                                                <h3>新增檔案下載</h3>
+                                            </div>
+                                            <div class="_content">
+                                                <div class="flex-form">
+                                                    <!--h4>基本資訊</h4-->
+                                                    <div class="form_grp" style="margin-top:20px;">
+                                                        <div class="form_content">
+                                                            <div class="labelEffect">
+                                                                <input name="" type="text"
+                                                                    value="行政院與所屬中央及地方各機關（構）公務員服勤實施辦法Ｑ＆Ａ"
+                                                                    class="dynamicCol used">
+                                                                <label>檔案名稱 (標題)：<abbr>*</abbr></label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_grp form_inline">
+                                                        <div class="labelEffect">
+                                                            <select id="" name="" class="dynamicCol used">
+                                                                <option value="" selected="" disabled="disabled">
+                                                                </option>
+                                                                <option value="1" selected>公用表格</option>
+                                                                <option value="2">機構法規</option>
+                                                            </select>
+                                                            <label>類別</label>
+                                                        </div>
+                                                        <div class="labelEffect">
+                                                            <select id="" name="" class="dynamicCol used">
+                                                                <option value="" selected="" disabled="disabled">
+                                                                </option>
+                                                                <option value="1" selected>社工科</option>
+                                                                <option value="2">安老/養護</option>
+                                                                <option value="3">保健站</option>
+                                                            </select>
+                                                            <label>科室</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_grp form_inline">
+                                                        <div class="labelEffect">
+                                                            <select id="" name="" class="dynamicCol used">
+                                                                <option value="" selected="" disabled="disabled">
+                                                                </option>
+                                                                <option value="1" selected>法令</option>
+                                                            </select>
+                                                            <label>類態</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <hr>
+                                                <div class="setting_block">
+                                                    <h3>附件檔案上傳
+                                                        <!--button class="btn btn-xs"><i class="i_addfile"></i>新增檔案</button-->
+                                                    </h3>
+                                                    <div class="fileDragDrop">
+                                                        <input type="file" id="inputFile"
+                                                            onchange="changeHandler(event,'file')"
+                                                            ondragover="dragoverHandler(event,'file')"
+                                                            ondrop="dropHandler(event,'file')">
+                                                        <p><em>上傳附件檔案</em></p>
+                                                        <p>拖拉檔案或選擇「從本機上傳」</p>
+                                                    </div>
+                                                    <p class="tips">說明文案：檔案上傳限制，格式或檔案大小等</p>
+
+                                                    <div class="upload_block">
+                                                        <!-- item = 1 file -->
+                                                        <div class="item">
+                                                            <div class="pic">
+                                                                <img src="images/icon/icon_xls.svg" alt="">
+                                                            </div>
+                                                            <div class="flex-form">
+                                                                <div class="file_title">附件檔案名稱.xls </div>
+                                                                <div class="form_grp">
+                                                                    <div class="labelEffect hasBtn">
+                                                                        <input name="" type="text" value="附件檔案名稱"
+                                                                            placeholder="附件檔案名稱" class="used">
+                                                                        <!--button class="btn btn-icon"><i class="i_copy"></i></button-->
+                                                                    </div>
+                                                                    <div class="additional">
+                                                                        <a href="#" class="btn"><i
+                                                                                class="i_edit"></i>移除</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!-- item = 1 file -->
+                                                        <div class="item">
+                                                            <div class="pic">
+                                                                <img src="images/icon/icon_pdf.svg" alt="">
+                                                            </div>
+                                                            <div class="flex-form">
+                                                                <div class="file_title">附件檔案名稱.pdf </div>
+                                                                <div class="form_grp">
+                                                                    <div class="labelEffect hasBtn">
+                                                                        <input name="" type="text" value="附件檔案名稱"
+                                                                            placeholder="附件檔案名稱" class="used">
+                                                                    </div>
+                                                                    <div class="additional">
+                                                                        <a href="#" class="btn"><i
+                                                                                class="i_edit"></i>移除</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--tabcontent 2-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="publish_block">
+                                <!-- 每種不同功能，都用block區分 -->
+                                <div class="block">
+                                    <div class="_head">
+                                        <h3>發佈選項</h3>
+                                    </div>
+                                    <div class="flex-form">
+                                        <div class="form_grp" style="margin-top:20px;">
+                                            <div class="form_title">前台狀態<abbr>*</abbr></div>
+                                            <div class="form_content">
+                                                <div class="radio_grp form_inline">
+                                                    <label><input name="radioStatus" type="radio" value=""
+                                                            checked><span>顯示</span></label>
+                                                    <label><input name="radioStatus" type="radio"
+                                                            value=""><span>隱藏</span></label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="btn_grp">
+                                        <!--button class="btn btn-green">暫存</button>
+                                        <button class="btn">預覽</button-->
+                                        <button class="btn btn-orange">確認儲存</button>
+                                        <button class="btn btn-gray">重新設定</button>
+                                    </div>
+                                </div>
+                                <div class="block">
+                                    <div class="block">
+                                        <div class="_head">
+                                            <h3>編輯紀錄</h3>
+                                        </div>
+                                        <div class="log">
+                                            <ul>
+                                                <li>
+                                                    <span><i class="i_man"></i></span><a href="#">系統管理者(admin)</a>
+                                                </li>
+                                                <li>
+                                                    <span><i class="i_clock"></i></span>2019/11/26 14:26:10
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="log">
+                                            <!--ul>
+                                            <li>編修者: <span><i class="i_man"></i></span>系統管理者(admin)</li>
+                                            <li>編修日期: <span><i class="i_clock"></i></span>2019/11/26 14:26:10 </li>
+                                            <li>建立者: <span><i class="i_man"></i></span>系統管理者(admin)</li>
+                                            <li>建立日期: <span><i class="i_clock"></i></span>2019/11/26 14:26:10 </li>
+                                        </ul-->
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- JS-->
+        <script src="js/jquery-3.3.1.min.js"></script>
+        <script src="vendor/jquery.easing.min.js"></script>
+        <!-- template customize js -->
+        <script src="js/customize.js"></script>
+        <!-- highlight -->
+        <script src="vendor/highlight/highlight.pack.js"></script>
+        <!-- tree view -->
+        <script src="vendor/treeview/jquery.treeview.js"></script>
+        <script>
+            // first example
+            $('header').load("header.htm");
+            $('aside').load("aside_nrsch.htm");
+        </script>
+
+</body>
+
+</html>
