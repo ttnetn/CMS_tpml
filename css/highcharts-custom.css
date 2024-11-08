@@ -1,0 +1,4 @@
+.mapcontainer .highcharts-series path {
+    fill: #f0f0f0 !important;
+    stroke: #bada55 !important;
+}
