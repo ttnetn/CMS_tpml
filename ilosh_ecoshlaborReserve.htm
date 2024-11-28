@@ -190,7 +190,7 @@
                                         </div>
 
                                         <div class="btn_grp">
-                                            <button class="btn reset">取消</button>
+                                            <button class="btn reset">已取消</button>
                                             <button class="btn btn-primary">確認</button>
                                         </div>
                                     </div>
@@ -209,28 +209,32 @@
                                 </div>
                                 <div class="_head">
                                     <div class="tag">
-                                        狀態：
+                                        預約狀態：
                                         <ul>
                                             <li class="active"><a href="#">全部</a></li>
-                                            <li><a href="#">正常</a></li>
-                                            <li><a href="#">取消</a></li>
-                                        </ul>
-
+                                            <!--li><a href="#">待確認</a></li-->
+                                            <li><a href="#">已預約</a></li>
+                                            <li><a href="#">已取消</a></li>
+                                            ｜報到狀態：
+                                            <ul>
+                                                <li class="active"><a href="#">全部</a></li>
+                                                <li><a href="#">正常</a></li>
+                                                <li><a href="#">未出席</a></li>
+                                            </ul>
                                     </div>
                                     <!-- 批次資料處理 --><!-- 預設隱藏，有勾選check再顯示 -->
                                     <div class="control_panel">
+                                        <!-- 預設隱藏，有勾選check再顯示 -->
                                         <div class="dropdown">
                                             <button class="btn dropdown-btn">
                                                 <i class="i_setting"></i>批次處理</button>
                                             <div class="dropdown-content">
                                                 <ul>
                                                     <li>
-                                                        <button class="btn">
-                                                            <i class="i_edit"></i>批次公開(上架)</button>
+                                                        <button class="btn"><i class="i_check"></i>批次設為報到</button>
                                                     </li>
                                                     <li>
-                                                        <button class="btn">
-                                                            <i class="i_add"></i>批次關閉(下架)</button>
+                                                        <button class="btn"><i class="i_trash"></i>批次已取消預約</button>
                                                     </li>
                                                 </ul>
                                             </div>
@@ -251,12 +255,8 @@
                                         </form>
                                     </div>
                                     <div class="quick_btn">
-                                        <button class="btn btn-orange"
-                                            onclick="window.location.href='ilosh_researchNew.htm';"><i
-                                                class="i_add"></i>單筆新增</button>
-                                        <button class="btn btn-orange"
-                                            onclick="window.location.href='ilosh_researchImport.htm';"><i
-                                                class="i_add"></i>批次匯入</button>
+                                        <button class="btn btn-orange" onclick="window.print()"><i
+                                                class="i_check"></i>列印本頁資料</button>
                                     </div>
                                 </div>
                                 <div class="_content">
@@ -268,17 +268,22 @@
                                                     <th><input type="checkbox"></th><!--有批次功能才使用-->
                                                     <th>序號</th>
                                                     <th class="text-left">
-                                                        <a href="#">系統編號 <i class="i_sort"></i></a>
+                                                        <a href="#">預約編號</a>
                                                     </th>
-                                                    </th>
-                                                    <th>時段</th>
-                                                    <th>團體名稱</th>
-                                                    <th>研究單位</th>
-                                                    <th>副表(專題)</th>
-                                                    <th class="text-left">狀態</th>
                                                     <th>
-                                                        <a href="#">建立日期 <i class="i_sort"></i></a>
+                                                        預約參觀地點</th>
                                                     </th>
+                                                    <th>預約時段</th>
+                                                    <th>預約團體名稱</th>
+                                                    <th>參觀人次</th>
+                                                    <th>實際人次</th>
+                                                    <th class="text-left">預約狀態</th>
+                                                    <th class="text-left">報到狀態</th>
+                                                    <th>
+                                                        <a href="#">預約日期</a>
+                                                    </th>
+                                                    <th>聯絡人</th>
+                                                    <th>電子信箱</th>
                                                     <th>編輯</th>
                                                 </tr>
                                             </thead>
@@ -287,12 +292,17 @@
                                                     <td><input type="checkbox"></td>
                                                     <td class="num">1</td>
                                                     <td><a href="#">220910022</a></td>
+
+                                                    <td>加衛體驗營</td>
                                                     <td>全天</td>
-                                                    <td><a href="#">職業災害勞工使用自費醫療材料情形評估研究</a></td>
-                                                    <td>職業危害評估研究組</td>
-                                                    <td>－</td>
+                                                    <td>數位創新學習探索團</td>
+                                                    <td>100</td>
+                                                    <td>50</td>
+                                                    <td><span class="orange">已預約</span></td>
                                                     <td><span class="green">正常</span></td>
-                                                    <td><time>2022/07/27</time></td>
+                                                    <td><time>2024/12/27</time></td>
+                                                    <td>林先生</td>
+                                                    <td>service@hyread.com.tw</td>
                                                     <td>
                                                         <div class="btn_grp">
                                                             <a href="ilosh_projectNew.htm" class="btn"><i
@@ -304,12 +314,16 @@
                                                     <td><input type="checkbox"></td>
                                                     <td class="num">2</td>
                                                     <td><a href="#">220910021</a></td>
+                                                    <td>XR體驗營</td>
                                                     <td>上午</td>
-                                                    <td><a href="#">善用中高齡及高齡員工活化企業人力資源</a></td>
-                                                    <td>勞動市場研究組</td>
-                                                    <td>－</td>
-                                                    <td><span class="gray">取消</span></td>
-                                                    <td><time>2022/07/27</time></td>
+                                                    <td>歷史與文化交流學習團</td>
+                                                    <td>100</td>
+                                                    <td>50</td>
+                                                    <td><span class="gray">已取消</span></td>
+                                                    <td><span class="gray">未出席</span></td>
+                                                    <td><time>2024/12/27</time></td>
+                                                    <td>林先生</td>
+                                                    <td>service@hyread.com.tw</td>
                                                     <td>
                                                         <div class="btn_grp">
                                                             <a href="ilosh_projectNew.htm" class="btn"><i
@@ -321,12 +335,16 @@
                                                     <td><input type="checkbox"></td>
                                                     <td class="num">3</td>
                                                     <td><a href="#">220910020</a></td>
+                                                    <td>XR體驗營</td>
                                                     <td>下午</td>
-                                                    <td><a href="#">守護勞工的最前線「勞安加衛體驗館」隆重開幕</a></td>
-                                                    <td>－</td>
-                                                    <td><i class="i_check"></i></td>
+                                                    <td>綠色環保行動團</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
+                                                    <td><span class="orange">已預約</span></td>
                                                     <td><span class="green">正常</span></td>
-                                                    <td><time>2022/07/27</time></td>
+                                                    <td><time>2024/12/27</time></td>
+                                                    <td>林先生</td>
+                                                    <td>service@hyread.com.tw</td>
                                                     <td>
                                                         <div class="btn_grp">
                                                             <a href="ilosh_projectNew.htm" class="btn"><i
