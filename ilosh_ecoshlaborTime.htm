@@ -1,0 +1,663 @@
+<!doctype html>
+<html lang="zh-Hant">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>W CMS Lite</title>
+    <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries [if lt IE 9]>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/respond.min.js"></script>
+    <![endif]-->
+    <!-- hyUI css -->
+    <link rel="stylesheet" href="css/supercms.css">
+    <link rel="stylesheet" href="css/customize.css">
+    <!-- favicon -->
+    <link href="images/favicon.png" rel="icon" type="image/x-icon">
+    <!-- highlight -->
+    <link rel="stylesheet" href="vendor/highlight/github-gist.css">
+    <!-- fancybox -->
+    <link rel="stylesheet" href="vendor/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="css/fileUpload.css">
+    <script src='https://cdn.tiny.cloud/1/no-api-key/tinymce/4/tinymce.min.js'></script>
+
+    <script>
+        tinymce.init({
+            selector: 'textarea.tinymce',
+            height: 500,
+            menubar: false,
+            plugins: [
+                'advlist autolink lists link image charmap print preview anchor textcolor',
+                'searchreplace visualblocks code fullscreen',
+                'insertdatetime media table contextmenu paste code help wordcount'
+            ],
+            mobile: {
+                theme: 'mobile'
+            },
+            toolbar: 'insert | undo redo |  formatselect | bold italic backcolor  | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | removeformat | help',
+            content_css: [
+                '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+                '//www.tiny.cloud/css/codepen.min.css'
+            ],
+        });
+    </script>
+    <style>
+        .mce-notification-inner,
+        .mce-notification-warning {
+            visibility: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- header load header.htm -->
+        <header></header>
+        <!-- aside load aside.htm -->
+        <aside></aside>
+        <!-- 主要內容區 -->
+        <div class="content">
+            <!-- breadcrumb路徑 -->
+            <div class="breadcrumb">
+                <ul>
+                    <li><a href="index.htm">首頁</a></li>
+                    <li><a href="#">客製化管理</a></li>
+                    <li>開放時間設定</li>
+                </ul>
+            </div>
+            <!-- gird section -->
+            <div class="grid">
+                <div class="container">
+                    <div class="title">
+                        <h2>開放時間設定</h2>
+                        <!--button class="btn" onclick="window.location.href='data_list_noTree.htm';">放棄</button-->
+                        <div class="function">
+                            <ul>
+                                <li class="icon_back"><a href="ilosh_ecoshlaborReserveList.htm">回上一頁</a></li>
+                            </ul>
+                        </div>
+
+                    </div>
+                    <div class="flex-12">
+                        <div class="col ">
+                            <div class="content_block">
+                                <div class="_head">
+                                    <h3>開放資訊</h3>
+                                </div>
+                                <div class="_content">
+                                    <!-- 年月份 start -->
+                                    <div class="year_month_block">
+                                        <div class="prev_btn"><a href="#">＜</a></div>
+                                        <div class="year_month">
+                                            <span>2024</span>年<span>12</span>月
+                                        </div>
+                                        <div class="next_btn"><a href="#">＞</a></div>
+                                    </div>
+                                    <!-- 年月份 end -->
+                                    <!-- 分眾 start -->
+                                    <!-- 分眾 end -->
+                                    <div class="table_list calendar_Tb">
+                                        <table>
+                                            <thead>
+                                                <tr>
+                                                    <th>週一</th>
+                                                    <th>週二</th>
+                                                    <th>週三</th>
+                                                    <th>週四</th>
+                                                    <th>週五</th>
+                                                    <th class="weekend">週六</th>
+                                                    <th class="weekend">週日</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <td class="othermonth" data-title="週一">
+                                                        <div class="num_date">26</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週二">
+                                                        <div class="num_date">27</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週三">
+                                                        <div class="num_date">28</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週四">
+                                                        <div class="num_date">29</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週五">
+                                                        <div class="num_date">30</div>
+                                                    </td>
+                                                    <td data-title="週六">
+                                                        <div class="num_date">1</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週日">
+                                                        <div class="num_date">2</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="週一">
+                                                        <div class="num_date">3</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-03" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-03" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週二">
+                                                        <div class="num_date">4</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週三">
+                                                        <div class="num_date">5</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-05" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-05" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週四">
+                                                        <div class="num_date">6</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-06" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-06" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週五">
+                                                        <div class="num_date">7</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-07" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-07" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週六">
+                                                        <div class="num_date">8</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週日">
+                                                        <div class="num_date">9</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="週一">
+                                                        <div class="num_date">10</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週二">
+                                                        <div class="num_date">11</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週三">
+                                                        <div class="num_date">12</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週四">
+                                                        <div class="num_date">13</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週五">
+                                                        <div class="num_date">14</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週六">
+                                                        <div class="num_date">15</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週日">
+                                                        <div class="num_date">16</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="週一">
+                                                        <div class="num_date">17</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週二">
+                                                        <div class="num_date">18</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週三">
+                                                        <div class="num_date">19</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週四">
+                                                        <div class="num_date">20</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週五">
+                                                        <div class="num_date">21</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週六">
+                                                        <div class="num_date">22</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週日">
+                                                        <div class="num_date">23</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="週一">
+                                                        <div class="num_date">24</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週二">
+                                                        <div class="num_date">25</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週三">
+                                                        <div class="num_date">26</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週四">
+                                                        <div class="num_date">27</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週五">
+                                                        <div class="num_date">28</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週六">
+                                                        <div class="num_date">29</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td data-title="週日">
+                                                        <div class="num_date">30</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <td data-title="週一">
+                                                        <div class="num_date">31</div>
+                                                        <ul>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="M_2022-10-04" type="checkbox"
+                                                                    checked="checked">上午
+                                                            </li>
+                                                            <li><input name="eventDay"
+                                                                    id="ef340358-94c7-404d-92f7-21530a8f571e"
+                                                                    value="A_2022-10-04" type="checkbox"
+                                                                    checked="checked">下午
+                                                            </li>
+                                                        </ul>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週二">
+                                                        <div class="num_date">1</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週三">
+                                                        <div class="num_date">2</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週四">
+                                                        <div class="num_date">3</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週五">
+                                                        <div class="num_date">4</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週六">
+                                                        <div class="num_date">5</div>
+                                                    </td>
+                                                    <td class="othermonth" data-title="週日">
+                                                        <div class="num_date">6</div>
+                                                    </td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- 右側資料widget -->
+                            <div class="publish_block">
+                                <!-- 每種不同功能，都用block區分 -->
+                                <div class="block">
+                                    <div class="_head">
+                                        <h3>編輯狀態</h3>
+                                    </div>
+                                    <div class="log">
+                                        <ul>
+                                            <li>
+                                                <span><i class="i_man"></i></span><a href="#">系統管理者(admin)</a>
+                                            </li>
+                                            <li>
+                                                <span><i class="i_clock"></i></span>2019/11/26
+                                                14:26:10
+                                            </li>
+                                        </ul>
+                                    </div>
+                                    <div class="btn_grp">
+                                        <button class="btn">暫存</button>
+                                        <button class="btn btn-orange">確認儲存</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JS-->
+            <script src="js/jquery-3.3.1.min.js"></script>
+            <script src="vendor/jquery.easing.min.js"></script>
+            <!-- template customize js -->
+            <script src="js/customize.js"></script>
+            <!-- highlight -->
+            <script src="vendor/highlight/highlight.pack.js"></script>
+            <!-- tree view -->
+            <script src="vendor/treeview/jquery.treeview.js"></script>
+            <!-- fancybox -->
+            <script src="vendor/fancybox/jquery.fancybox.min.js"></script>
+            <script>
+                // first example
+                $(".treeview .treeview").treeview();
+            </script>
+            <script>
+                hljs.initHighlightingOnLoad();
+            </script>
+            <script>
+                // first example
+                $(".treeview .treeview").treeview();
+                $('header').load("header.htm");
+                $('aside').load("aside_ilosh.htm");
+            </script>
+</body>
+
+</html>
