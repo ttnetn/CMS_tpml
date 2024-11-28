@@ -74,71 +74,40 @@
                                         <div class="flex-form flex-6-6">
                                             <div class="form_grp">
                                                 <div class="labelEffect">
-                                                    <select id="" name="" class="dynamicCol used">
-                                                        <option value="" disabled="disabled"></option>
-                                                        <option value="all">全部</option>
-                                                        <option value="1" selected>各年度研究報告</option>
-                                                        <option value="2">簡訊</option>
-                                                        <option value="3">研究季刊</option>
-                                                        <option value="4">技術叢書</option>
-                                                        <option value="5">重要績效輯(其他出版品)</option>
-                                                        <option value="6">專利技術</option>
-                                                    </select>
-                                                    <label>單元</label>
+                                                    <input name="search_userid" id="search_userid" type="text" value="">
+                                                    <label>預約編號</label>
                                                 </div>
                                             </div>
                                             <div class="form_grp">
                                                 <div class="labelEffect">
                                                     <input name="search_name" id="search_name" type="text" value="">
-                                                    <label>名稱</label>
-                                                </div>
-                                            </div>
-                                            <div class="form_grp">
-                                                <div class="labelEffect">
-                                                    <input name="search_userid" id="search_userid" type="text" value="">
-                                                    <label>系統編號</label>
-                                                </div>
-                                            </div>
-                                            <div class="form_grp">
-                                                <div class="labelEffect">
-                                                    <input name="search_userid" id="search_userid" type="text" value="">
-                                                    <label>計畫編號</label>
+                                                    <label>預約團體名稱</label>
                                                 </div>
                                             </div>
                                             <div class="form_grp">
                                                 <div class="labelEffect">
                                                     <select id="" name="">
                                                         <option value="" selected="" disabled="disabled"></option>
-                                                        <optgroup label="第一層單位群組">
-                                                            <option value="1">單位名稱1</option>
-                                                            <option value="2">單位名稱2</option>
-                                                        </optgroup>
-                                                        <optgroup label="資料夾2">
-                                                            <option value="3">節點</option>
-                                                            <option value="4">節點</option>
-                                                            <option value="4">節點</option>
-                                                        </optgroup>
+                                                        <option value="1">全部</option>
+                                                        <option value="2">加衛體驗營</option>
+                                                        <option value="3">XR體驗館</option>
                                                     </select>
-                                                    <label>研究單位</label>
+                                                    <label>參觀地點</label>
                                                 </div>
                                             </div>
-                                            <!--div class="form_grp">
+                                            <div class="form_grp">
                                                 <div class="labelEffect">
                                                     <select id="" name="">
                                                         <option value="" selected="" disabled="disabled"></option>
-                                                        <optgroup label="第一層單位群組">
-                                                            <option value="1">單位名稱1</option>
-                                                            <option value="2">單位名稱2</option>
-                                                          </optgroup>
-                                                          <optgroup label="資料夾2">
-                                                            <option value="3">節點</option>
-                                                            <option value="4">節點</option>
-                                                            <option value="4">節點</option>
-                                                          </optgroup>                                                        
+                                                        <option value="1">全部</option>
+                                                        <option value="2">全天</option>
+                                                        <option value="3">上午</option>
+                                                        <option value="4">下午</option>
                                                     </select>
-                                                    <label>出版單位</label>
+                                                    <label>參觀時間</label>
                                                 </div>
-                                            </div-->
+                                            </div>
+
                                             <div class="form_grp datepick">
                                                 <div class="startDate">
                                                     <div class="labelEffect">
@@ -148,7 +117,7 @@
                                                             onblur="if(!this.value) this.type='text'">
                                                         <!--input name="" type="calendar" value="" class="calendar">
                                                         <button class="btn"><i class="i_calendar"></i></button-->
-                                                        <label>發布日期(起)</label>
+                                                        <label>預約日期(起)</label>
                                                     </div>
                                                     <!-- <div class="help">說明文字</div> -->
                                                 </div>
@@ -159,38 +128,14 @@
                                                             onblur="if(!this.value) this.type='text'">
                                                         <!--input name="" type="calendar" value="" class="calendar">
                                                         <button class="btn"><i class="i_calendar"></i></button-->
-                                                        <label>發布日期(迄)</label>
+                                                        <label>預約日期(迄)</label>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <!--div class="form_grp">
-                                                <div class="labelEffect">
-                                                    <select id="" name="">
-                                                        <option value="" selected="" disabled="disabled"></option>
-                                                            <option value="1">111年</option>
-                                                            <option value="2">112年</option>
-                                                            <option value="3">節點</option>
-                                                            <option value="4">節點</option>
-                                                            <option value="4">節點</option>
-                                                    </select>
-                                                    <label>出版年度</label>
-                                                </div>
-                                                <div class="labelEffect">
-                                                    <select id="" name="">
-                                                        <option value="" selected="" disabled="disabled"></option>
-                                                            <option value="1">第N卷</option>
-                                                            <option value="2">2月</option>
-                                                            <option value="3">節點</option>
-                                                            <option value="4">節點</option>
-                                                            <option value="4">節點</option>
-                                                    </select>
-                                                    <label>卷別/期別</label>
-                                                </div>
-                                            </div-->
                                         </div>
 
                                         <div class="btn_grp">
-                                            <button class="btn reset">已取消</button>
+                                            <button class="btn reset">取消</button>
                                             <button class="btn btn-primary">確認</button>
                                         </div>
                                     </div>
