@@ -74,7 +74,7 @@
                         <!--button class="btn" onclick="window.location.href='data_list_noTree.htm';">放棄</button-->
                         <div class="function">
                             <ul>
-                                <li class="icon_back"><a href="ilosh_ecoshlaborReserveList.htm">回上一頁</a></li>
+                                <li class="icon_back"><a href="javascript: history.back();">回上一頁</a></li>
                             </ul>
                         </div>
 
@@ -107,93 +107,70 @@
                                                             <label>預約編號</label>
                                                         </div>
                                                         <!-- <div class="help">說明文字</div> -->
-
+                                                    </div>
+                                                    <div class="form_grp form_inline">
+                                                        <div class="datepick" style="flex: 0 1 50%;padding-left:.75em;">
+                                                            <div class="labelEffect">
+                                                                <!--處理 Animated Labels for date/datetime-local 會卡在一起的效果-->
+                                                                <input name="" type="text" value="2024-10-16"
+                                                                    onfocus="(this.type='date')"
+                                                                    onblur="if(!this.value) this.type='text'"
+                                                                    class="dynamicCol used">
+                                                                <label>預約日期</label>
+                                                            </div>
+                                                        </div>
                                                         <div class="labelEffect">
-                                                            <!--處理 Animated Labels for date/datetime-local 會卡在一起的效果-->
-                                                            <input name="" type="text" value="2024-12-16"
-                                                                onfocus="(this.type='date')"
-                                                                onblur="if(!this.value) this.type='text'"
-                                                                class="dynamicCol used">
-                                                            <label>預約日期</label>
+                                                            <input name="" id="" type="text" value="下午"
+                                                                class="dynamicCol used" disabled>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_grp">
+                                                        <div class="labelEffect">
+                                                            <input name="" id="" type="text" value="劉佳淇"
+                                                                class="dynamicCol used" disabled>
+                                                            <label>預約姓名</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="form_grp">
+                                                        <div class="labelEffect">
+                                                            <input name="" id="" type="text" value="liucc@hyweb.com.tw"
+                                                                class="dynamicCol used" disabled>
+                                                            <label>預約email</label>
                                                         </div>
                                                     </div>
                                                     <div class="form_grp form_inline">
                                                         <div class="datepick" style="flex: 0 1 50%;padding-left:.75em;">
                                                             <div class="labelEffect">
-                                                                <select id="" name="" class="dynamicCol used">
-                                                                    <option value="" selected="" disabled="disabled">
-                                                                    </option>
-                                                                    <option value="1" selected>學校-幼稚園</option>
-                                                                    <option value="2">學校-國小</option>
-                                                                    <option value="3">學校-國中</option>
-                                                                </select>
-                                                                <label>預約參觀單位</label>
+                                                                <!--處理 Animated Labels for date/datetime-local 會卡在一起的效果-->
+                                                                <input name="" type="text" value="2022-10-16"
+                                                                    onfocus="(this.type='date')"
+                                                                    onblur="if(!this.value) this.type='text'"
+                                                                    class="dynamicCol used">
+                                                                <label>預約日期</label>
                                                             </div>
                                                         </div>
-
                                                         <div class="labelEffect">
-                                                            <select id="" name="" class="dynamicCol used">
-                                                                <option value="" selected="" disabled="disabled">
-                                                                </option>
-                                                                <option value="1" selected>全天</option>
-                                                                <option value="2">上午</option>
-                                                                <option value="3">下午</option>
-                                                            </select>
-                                                            <label>預約參觀時段</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form_grp form_inline">
-                                                        <div class="labelEffect">
-                                                            <input name="" id="" type="text" value="100"
-                                                                class="dynamicCol used">
-                                                            <label>參觀人次</label>
-                                                        </div>
-
-                                                        <div class="labelEffect">
-                                                            <input name="" id="" type="text" value="50"
-                                                                class="dynamicCol used">
-                                                            <label>實際人次</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form_grp form_inline">
-                                                        <div class="labelEffect">
-                                                            <select id="" name="" class="dynamicCol used">
-                                                                <option value="" selected="" disabled="disabled">
-                                                                </option>
-                                                                <option value="1" selected>加衛體驗營</option>
-                                                                <option value="2">XR體驗營</option>
-                                                            </select>
-                                                            <label>預約參觀地點</label>
-                                                        </div>
-                                                        <div class="labelEffect">
-                                                            <input name="" id="" type="text" value="數位創新學習探索團"
-                                                                class="dynamicCol used">
-                                                            <label>申請單位</label>
-                                                        </div>
-                                                    </div>
-                                                    <div class="form_grp form_inline">
-                                                        <div class="labelEffect">
-                                                            <input name="" id="" type="text" value="林先生"
-                                                                class="dynamicCol used">
-                                                            <label>預約聯絡人</label>
-                                                        </div>
-                                                        <div class="labelEffect">
-                                                            <input name="" id="" type="text"
-                                                                value="service@hyread.com.tw" class="dynamicCol used">
-                                                            <label>電子信箱</label>
+                                                            <input name="" id="" type="text" value="下午"
+                                                                class="dynamicCol used" disabled>
                                                         </div>
                                                     </div>
                                                     <div class="form_grp">
                                                         <div class="labelEffect">
-                                                            <input name="" id="" type="text" value="Data-01"
-                                                                class="dynamicCol used">
-                                                            <label>聯絡手機</label>
+                                                            <input name="" id="" type="text" value="DATA1, DATA2, DATA3"
+                                                                class="dynamicCol used" disabled>
+                                                            <label>預約VDI虛擬主機</label>
                                                         </div>
                                                     </div>
-                                                    <div class="form_grp">
+                                                    <div class="form_grp form_inline">
                                                         <div class="labelEffect">
-                                                            <textarea></textarea>
-                                                            <label>參觀團體簡介與備註</label>
+                                                            <input name="" id="" type="text" value="101教室"
+                                                                class="dynamicCol used" disabled>
+                                                            <label>預約教室</label>
+                                                        </div>
+                                                        <div class="labelEffect">
+                                                            <input name="" id="" type="text" value="A1, A2"
+                                                                class="dynamicCol used" disabled>
+                                                            <label>預約位置</label>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -732,8 +709,8 @@
                                         </ul>
                                     </div>
                                     <div class="btn_grp">
-                                        <button class="btn">暫存</button>
-                                        <button class="btn btn-orange">結案</button>
+                                        <button class="btn btn-orange">編修儲存</button>
+                                        <button class="btn">放棄編修</button>
                                     </div>
                                 </div>
                             </div>

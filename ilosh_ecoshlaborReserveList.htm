@@ -81,18 +81,7 @@
                                             <div class="form_grp">
                                                 <div class="labelEffect">
                                                     <input name="search_name" id="search_name" type="text" value="">
-                                                    <label>預約團體名稱</label>
-                                                </div>
-                                            </div>
-                                            <div class="form_grp">
-                                                <div class="labelEffect">
-                                                    <select id="" name="">
-                                                        <option value="" selected="" disabled="disabled"></option>
-                                                        <option value="1">全部</option>
-                                                        <option value="2">加衛體驗營</option>
-                                                        <option value="3">XR體驗館</option>
-                                                    </select>
-                                                    <label>參觀地點</label>
+                                                    <label>申請單位</label>
                                                 </div>
                                             </div>
                                             <div class="form_grp">
@@ -104,10 +93,20 @@
                                                         <option value="3">上午</option>
                                                         <option value="4">下午</option>
                                                     </select>
-                                                    <label>參觀時間</label>
+                                                    <label>預約參觀時段</label>
                                                 </div>
                                             </div>
-
+                                            <div class="form_grp">
+                                                <div class="labelEffect">
+                                                    <select id="" name="">
+                                                        <option value="" selected="" disabled="disabled"></option>
+                                                        <option value="1">全部</option>
+                                                        <option value="2">加衛體驗營</option>
+                                                        <option value="3">XR體驗館</option>
+                                                    </select>
+                                                    <label>預約參觀地點</label>
+                                                </div>
+                                            </div>
                                             <div class="form_grp datepick">
                                                 <div class="startDate">
                                                     <div class="labelEffect">
@@ -200,8 +199,10 @@
                                         </form>
                                     </div>
                                     <div class="quick_btn">
-                                        <button class="btn btn-orange" onclick="window.print()"><i
-                                                class="i_check"></i>列印本頁資料</button>
+                                        <button class="btn btn-orange"
+                                            onclick="window.location.href='ilosh_ecoshlaborEmail.htm';"><i
+                                                class="i_add"></i>管理信箱名單</button>
+
                                     </div>
                                 </div>
                                 <div class="_content">
@@ -216,17 +217,17 @@
                                                         <a href="#">預約編號</a>
                                                     </th>
                                                     <th>
-                                                        預約參觀地點</th>
-                                                    </th>
-                                                    <th>預約時段</th>
-                                                    <th>預約團體名稱</th>
-                                                    <th>參觀人次</th>
-                                                    <th>實際人次</th>
-                                                    <th class="text-left">預約狀態</th>
-                                                    <th class="text-left">報到狀態</th>
-                                                    <th>
                                                         <a href="#">預約日期</a>
                                                     </th>
+                                                    <th>預約參觀時段</th>
+                                                    <th>
+                                                        預約參觀地點</th>
+                                                    </th>
+                                                    <th>參觀人次</th>
+                                                    <th>實際人次</th>
+                                                    <th>申請單位</th>
+                                                    <th class="text-left">預約狀態</th>
+                                                    <th class="text-left">報到狀態</th>
                                                     <th>聯絡人</th>
                                                     <th>電子信箱</th>
                                                     <th>編輯</th>
@@ -236,16 +237,15 @@
                                                 <tr>
                                                     <td><input type="checkbox"></td>
                                                     <td class="num">1</td>
-                                                    <td><a href="#">220910022</a></td>
-
-                                                    <td>加衛體驗營</td>
+                                                    <td><a href="ilosh_ecoshlaborReserveEdit.htm">220910022</a></td>
+                                                    <td><time>2024/12/27</time></td>
                                                     <td>全天</td>
-                                                    <td>數位創新學習探索團</td>
+                                                    <td>加衛體驗營</td>
                                                     <td>100</td>
                                                     <td>50</td>
+                                                    <td>數位創新學習探索團</td>
                                                     <td><span class="orange">已預約</span></td>
                                                     <td><span class="green">正常</span></td>
-                                                    <td><time>2024/12/27</time></td>
                                                     <td>林先生</td>
                                                     <td>service@hyread.com.tw</td>
                                                     <td>
@@ -258,15 +258,15 @@
                                                 <tr>
                                                     <td><input type="checkbox"></td>
                                                     <td class="num">2</td>
-                                                    <td><a href="#">220910021</a></td>
-                                                    <td>XR體驗營</td>
+                                                    <td><a href="ilosh_ecoshlaborReserveEdit.htm">220910021</a></td>
+                                                    <td><time>2024/12/27</time></td>
                                                     <td>上午</td>
-                                                    <td>歷史與文化交流學習團</td>
+                                                    <td>XR體驗營</td>
                                                     <td>100</td>
                                                     <td>50</td>
+                                                    <td>歷史與文化交流學習團</td>
                                                     <td><span class="gray">已取消</span></td>
                                                     <td><span class="gray">未出席</span></td>
-                                                    <td><time>2024/12/27</time></td>
                                                     <td>林先生</td>
                                                     <td>service@hyread.com.tw</td>
                                                     <td>
@@ -279,15 +279,15 @@
                                                 <tr>
                                                     <td><input type="checkbox"></td>
                                                     <td class="num">3</td>
-                                                    <td><a href="#">220910020</a></td>
-                                                    <td>XR體驗營</td>
+                                                    <td><a href="ilosh_ecoshlaborReserveEdit.htm">220910020</a></td>
+                                                    <td><time>2024/12/27</time></td>
                                                     <td>下午</td>
+                                                    <td>XR體驗營</td>
+                                                    <td>0</td>
+                                                    <td>0</td>
                                                     <td>綠色環保行動團</td>
-                                                    <td>0</td>
-                                                    <td>0</td>
                                                     <td><span class="orange">已預約</span></td>
                                                     <td><span class="green">正常</span></td>
-                                                    <td><time>2024/12/27</time></td>
                                                     <td>林先生</td>
                                                     <td>service@hyread.com.tw</td>
                                                     <td>
