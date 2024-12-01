@@ -65,7 +65,7 @@
                                                         <option value="2">加衛體驗營</option>
                                                         <option value="3">XR體驗館</option>
                                                     </select>
-                                                    <label>預約參觀地點</label>
+                                                    <label> 參觀地點</label>
                                                 </div>
                                             </div>
                                             <div class="form_grp form_inline">
@@ -77,7 +77,7 @@
                                                         <option value="3">上午</option>
                                                         <option value="4">下午</option>
                                                     </select>
-                                                    <label>預約參觀時間</label>
+                                                    <label> 參觀時間</label>
                                                 </div>
                                             </div>
 
@@ -148,17 +148,19 @@
                                 <!-- 表格樣式 -->
                                 <div class="table_wrapper">
                                     <table class="table_hover">
-                                        <caption>統計範例一：需確認前台目前時段允許預約人次規則?(剩餘名額)</caption>
+                                        <caption>方案一：假如報表全天算兩個人次</caption>
                                         <thead>
                                             <tr>
                                                 <th>序號</th>
                                                 <th class="text-left">日期</th>
-                                                <th>預約參觀地點</th>
-                                                <th>預約參觀時間</th>
+                                                <th>參觀地點</th>
+                                                <th>參觀時間</th>
                                                 <th>預約人次限制</th>
                                                 <th>已預約人次</th>
+                                                <th>已預約人數</th>
+                                                <th>剩餘名額(人數)</th>
+                                                <th class="text-left">剩餘名額(人次)</th>
                                                 <th class="text-left">已實際報到人次</th>
-                                                <th class="text-left">前台目前時段允許預約人次?(剩餘名額)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -167,155 +169,254 @@
                                                 <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>全天</td>
-                                                <td>200人</td>
-                                                <td>50人</td>
-                                                <td>20人</td>
-                                                <td>80人</td>
+                                                <td>200</td>
+                                                <td>2</td>
+                                                <td>1</td>
+                                                <td>95</td>
+                                                <td>190</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">2</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>上午</td>
-                                                <td>100人</td>
-                                                <td>40人</td>
-                                                <td>10人</td>
-                                                <td>10人</td>
+                                                <td>100</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>98</td>
+                                                <td>98</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">3</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>下午</td>
-                                                <td>100人</td>
-                                                <td>30人</td>
-                                                <td>10人</td>
-                                                <td>20人</td>
+                                                <td>100</td>
+                                                <td>4</td>
+                                                <td>4</td>
+                                                <td>95</td>
+                                                <td>95</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">4</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>全天</td>
-                                                <td>100人</td>
-                                                <td>20人</td>
-                                                <td>10人</td>
-                                                <td>70人</td>
+                                                <td>100</td>
+                                                <td>6</td>
+                                                <td>3</td>
+                                                <td>42</td>
+                                                <td>84</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">5</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>上午</td>
-                                                <td>50人</td>
-                                                <td>10人</td>
-                                                <td>0人</td>
-                                                <td>20人</td>
+                                                <td>50</td>
+                                                <td>4</td>
+                                                <td>4</td>
+                                                <td>43</td>
+                                                <td>86</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">6</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>下午</td>
-                                                <td>50人</td>
-                                                <td>0人</td>
-                                                <td>0人</td>
-                                                <td>30人</td>
+                                                <td>50</td>
+                                                <td>5</td>
+                                                <td>5</td>
+                                                <td>42</td>
+                                                <td>84</td>
+                                                <td>1</td>
                                             </tr>
                                         </tbody>
                                     </table>
                                 </div>
                                 <div class="table_wrapper">
                                     <table class="table_hover">
-                                        <caption>統計範例二（後台介面加總範例）</caption>
+                                        <caption>方案二：假如報表全天算一個人次</caption>
                                         <thead>
                                             <tr>
                                                 <th>序號</th>
                                                 <th>日期</th>
-                                                <th>預約參觀地點</th>
-                                                <th>預約參觀時間</th>
+                                                <th>參觀地點</th>
+                                                <th>參觀時間</th>
                                                 <th>預約人次限制</th>
                                                 <th>已預約人次</th>
+                                                <th>已預約人數</th>
+                                                <th class="text-left">剩餘名額(人次)</th>
                                                 <th class="text-left">已實際報到人次</th>
-                                                <th class="text-left">前台目前時段允許預約人次?(剩餘名額)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <td class="num">1</td>
-                                                <td>2025/1/1~1/5</td>
+                                                <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>全天</td>
-                                                <td>1000人</td>
-                                                <td>500人</td>
-                                                <td>450人</td>
-                                                <td>550人</td>
+                                                <td>100</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>96</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">2</td>
-                                                <td>2025/1/1~1/5</td>
+                                                <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>上午</td>
-                                                <td>500人</td>
-                                                <td>250人</td>
-                                                <td>225人</td>
-                                                <td>275人</td>
+                                                <td>100</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>98</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">3</td>
-                                                <td>2025/1/1~1/5</td>
+                                                <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>下午</td>
-                                                <td>500人</td>
-                                                <td>250人</td>
-                                                <td>225人</td>
-                                                <td>275人</td>
+                                                <td>100</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>96</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">4</td>
-                                                <td>2025/1/1~1/5</td>
+                                                <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>全天</td>
-                                                <td>500人</td>
-                                                <td>400人</td>
-                                                <td>375人</td>
-                                                <td>125人</td>
+                                                <td>50</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>49</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">5</td>
-                                                <td>2025/1/1~1/5</td>
+                                                <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>上午</td>
-                                                <td>250人</td>
-                                                <td>0人</td>
-                                                <td>0人</td>
-                                                <td>250人</td>
+                                                <td>50</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>49</td>
+                                                <td>1</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">6</td>
-                                                <td>2025/1/1~1/5</td>
+                                                <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>下午</td>
-                                                <td>250人</td>
-                                                <td>0人</td>
-                                                <td>0人</td>
-                                                <td>250人</td </tr>
+                                                <td>50</td>
+                                                <td>1</td>
+                                                <td>1</td>
+                                                <td>49</td>
+                                                <td>1</td>
+                                            </tr>
                                         </tbody>
                                     </table>
                                 </div>
                                 <div class="table_wrapper">
                                     <table class="table_hover">
-                                        <caption>統計範例三（Excel匯出逐日數據範例）</caption>
+                                        <caption>範例三（後台介面加總範例）</caption>
                                         <thead>
                                             <tr>
                                                 <th>序號</th>
                                                 <th>日期</th>
-                                                <th>預約參觀地點</th>
-                                                <th>預約參觀時間</th>
-                                                <th>預約人次限制</th>
+                                                <th> 參觀地點</th>
+                                                <th> 參觀時間</th>
+                                                <th> 人次限制</th>
                                                 <th>已預約人次</th>
                                                 <th class="text-left">已實際報到人次</th>
-                                                <th class="text-left">前台目前時段允許預約人次?(剩餘名額)</th>
+                                                <th class="text-left">剩餘名額(人次)</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="num">1</td>
+                                                <td>2025/1/1~1/5</td>
+                                                <td>加衛體驗營</td>
+                                                <td>全天</td>
+                                                <td>1000</td>
+                                                <td>500</td>
+                                                <td>450</td>
+                                                <td>550</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">2</td>
+                                                <td>2025/1/1~1/5</td>
+                                                <td>加衛體驗營</td>
+                                                <td>上午</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>225</td>
+                                                <td>275</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">3</td>
+                                                <td>2025/1/1~1/5</td>
+                                                <td>加衛體驗營</td>
+                                                <td>下午</td>
+                                                <td>500</td>
+                                                <td>250</td>
+                                                <td>225</td>
+                                                <td>275</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">4</td>
+                                                <td>2025/1/1~1/5</td>
+                                                <td>XR體驗館</td>
+                                                <td>全天</td>
+                                                <td>500</td>
+                                                <td>400</td>
+                                                <td>375</td>
+                                                <td>125</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">5</td>
+                                                <td>2025/1/1~1/5</td>
+                                                <td>XR體驗館</td>
+                                                <td>上午</td>
+                                                <td>250</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>250</td>
+                                            </tr>
+                                            <tr>
+                                                <td class="num">6</td>
+                                                <td>2025/1/1~1/5</td>
+                                                <td>XR體驗館</td>
+                                                <td>下午</td>
+                                                <td>250</td>
+                                                <td>0</td>
+                                                <td>0</td>
+                                                <td>250</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="table_wrapper">
+                                    <table class="table_hover">
+                                        <caption>範例四（Excel匯出逐日數據不相乘範例）</caption>
+                                        <thead>
+                                            <tr>
+                                                <th>序號</th>
+                                                <th>日期</th>
+                                                <th>參觀地點</th>
+                                                <th>參觀時間</th>
+                                                <th>人次限制</th>
+                                                <th>已預約人次</th>
+                                                <th class="text-left">已實際報到人次</th>
+                                                <th class="text-left">剩餘名額(人次)</th>
                                             </tr>
                                         </thead>
                                         <tbody>
@@ -324,90 +425,90 @@
                                                 <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>全天</td>
-                                                <td>200人</td>
-                                                <td>180人</td>
-                                                <td>90人</td>
-                                                <td>110人</td>
+                                                <td>200</td>
+                                                <td>180</td>
+                                                <td>90</td>
+                                                <td>110</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">2</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>上午</td>
-                                                <td>100人</td>
-                                                <td>80人</td>
-                                                <td>50人</td>
-                                                <td>50人</td>
+                                                <td>100</td>
+                                                <td>80</td>
+                                                <td>50</td>
+                                                <td>50</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">3</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>加衛體驗營</td>
                                                 <td>下午</td>
-                                                <td>100人</td>
-                                                <td>90人</td>
-                                                <td>60人</td>
-                                                <td>40人</td>
+                                                <td>100</td>
+                                                <td>90</td>
+                                                <td>60</td>
+                                                <td>40</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">4</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>全天</td>
-                                                <td>100人</td>
-                                                <td>85人</td>
-                                                <td>60人</td>
-                                                <td>40人</td>
+                                                <td>100</td>
+                                                <td>85</td>
+                                                <td>60</td>
+                                                <td>40</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">5</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>上午</td>
-                                                <td>50人</td>
-                                                <td>40人</td>
-                                                <td>25人</td>
-                                                <td>25人</td>
+                                                <td>50</td>
+                                                <td>40</td>
+                                                <td>25</td>
+                                                <td>25</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">6</td>
                                                 <td>2025/1/1~1/1</td>
                                                 <td>XR體驗館</td>
                                                 <td>下午</td>
-                                                <td>50人</td>
-                                                <td>45人</td>
-                                                <td>35人</td>
-                                                <td>15人</td>
+                                                <td>50</td>
+                                                <td>45</td>
+                                                <td>35</td>
+                                                <td>15</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">7</td>
                                                 <td>2025/1/2~1/2</td>
                                                 <td>加衛體驗館</td>
                                                 <td>全天</td>
-                                                <td>200人</td>
-                                                <td>150人</td>
-                                                <td>110人</td>
-                                                <td>90人</td>
+                                                <td>200</td>
+                                                <td>150</td>
+                                                <td>110</td>
+                                                <td>90</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">8</td>
                                                 <td>2025/1/2~1/2</td>
                                                 <td>加衛體驗</td>
                                                 <td>上午</td>
-                                                <td>100人</td>
-                                                <td>80人</td>
-                                                <td>40人</td>
-                                                <td>60人</td>
+                                                <td>100</td>
+                                                <td>80</td>
+                                                <td>40</td>
+                                                <td>60</td>
                                             </tr>
                                             <tr>
                                                 <td class="num">9</td>
                                                 <td>2025/1/2~1/2</td>
                                                 <td>加衛體驗館</td>
                                                 <td>下午</td>
-                                                <td>100人</td>
-                                                <td>70人</td>
-                                                <td>50人</td>
-                                                <td>50人</td>
+                                                <td>100</td>
+                                                <td>70</td>
+                                                <td>50</td>
+                                                <td>50</td>
                                             </tr>
                                             </tr>
                                             <tr>
@@ -415,10 +516,10 @@
                                                 <td>2025/1/2~1/2</td>
                                                 <td>XR體驗館</td>
                                                 <td>全天</td>
-                                                <td>100人</td>
-                                                <td>90人</td>
-                                                <td>70人</td>
-                                                <td>30人</td>
+                                                <td>100</td>
+                                                <td>90</td>
+                                                <td>70</td>
+                                                <td>30</td>
                                             </tr>
                                         </tbody>
                                     </table>
