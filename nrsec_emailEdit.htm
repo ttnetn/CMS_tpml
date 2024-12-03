@@ -34,18 +34,18 @@
             <div class="breadcrumb">
                 <ul>
                     <li><a href="index.htm">首頁</a></li>
-                    <li><a href="#">民意信箱管理</a></li>
-                    <li>民意信箱管理</li>
+                    <li><a href="#">客製化管理</a></li>
+                    <li>線上申辦管理</li>
                 </ul>
             </div>
             <!-- gird section -->
             <div class="grid">
                 <div class="container">
                     <div class="title">
-                        <h2>民意信箱管理</h2>
+                        <h2>線上申辦管理</h2>
                         <div class="function">
                             <ul>
-                                <li class="icon_back"><a href="nrsch_feedbackList.htm" ;">回上一頁</a></li>
+                                <li class="icon_back"><a href="nrsch_memberList.htm">回上一頁</a></li>
                             </ul>
                         </div>
                     </div>
@@ -64,7 +64,7 @@
                                 <div class="active">
                                     <div class="content__wrapper">
                                         <div class="_head">
-                                            <h3>信箱資訊</h3>
+                                            <h3>預約資訊</h3>
                                         </div>
                                         <div class="_content">
                                             <div class="flex-form">
@@ -73,53 +73,32 @@
                                                         <select id="" name="" class="dynamicCol used">
                                                             <option value="" selected="" disabled="disabled">
                                                             </option>
-                                                            <option value="1" selected>未處理</option>
-                                                            <option value="2">處理中</option>
-                                                            <option value="2">已處理</option>
+                                                            <option value="1" selected>113年度老人福利機構專業人員在職訓練</option>
+                                                            <option value="2">場次2</option>
+                                                            <option value="2">場次3</option>
                                                         </select>
-                                                        <label>處理狀態</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form_grp">
-                                                    <div class="labelEffect">
-                                                        <input name="userName" id="userName" type="text" value="劉其然"
-                                                            disabled>
-                                                        <label for="userName">姓名<abbr>*</abbr></label>
+                                                        <label>活動報名單元</label>
                                                     </div>
                                                 </div>
                                                 <div class="form_grp">
                                                     <div class="labelEffect">
                                                         <input name="email" id="email" type="text"
-                                                            value="nay1124@gmail.com" disabled>
-                                                        <label>E-mail<abbr>*</abbr></label>
+                                                            value="04-00000000#123">
+                                                        <label>信箱標題<abbr>*</abbr></label>
                                                     </div>
                                                 </div>
                                                 <div class="form_grp">
                                                     <div class="labelEffect">
-                                                        <input name="telephone" id="telephone" type="text"
-                                                            value="04-00000000#123" disabled>
-                                                        <label>聯絡人電話<abbr>*</abbr></label>
-                                                    </div>
-                                                </div>
-                                                <div class="form_grp">
-                                                    <div class="labelEffect">
-                                                        <input name="address" id="address" type="text"
-                                                            value="台中市西屯區臺灣大道三段658號6樓A1" disabled>
-                                                        <label>聯絡地址</label>
-                                                    </div>
-                                                </div>
-                                                <div class="form_grp">
-                                                    <div class="labelEffect">
-                                                        <input name="option" id="option" type="text" value="預約老人之家入住"
+                                                        <input name="email" id="email" type="text" value="13:30"
                                                             disabled>
-                                                        <label>意見標題</label>
+                                                        <label>請工程師套所見即所得區塊</label>
                                                     </div>
                                                 </div>
                                                 <div class="form_grp" style="margin-bottom:50px;">
                                                     <div class="labelEffect" disabled>
                                                         <textarea
                                                             class="used">預約老人之家入住的相關事宜，了解入住的條件、流程及所需準備的文件</textarea>
-                                                        <label>意見內容</label>
+                                                        <label>預約事項</label>
                                                     </div>
                                                     <div class="help">100 / 500</div>
                                                 </div>
@@ -141,10 +120,26 @@
                             <!-- 每種不同功能，都用block區分 -->
                             <div class="block">
                                 <div class="_head">
-                                    <h3>設定選項</h3>
+                                    <h3>發佈選項</h3>
                                 </div>
+                                <div class="flex-form">
+                                    <div class="form_grp" style="margin-top:20px;">
+                                        <div class="form_title">活動狀態<abbr>*</abbr></div>
+                                        <div class="form_content">
+                                            <div class="radio_grp form_inline">
+                                                <label><input name="radioStatus" type="radio" value=""
+                                                        checked><span>立即發送</span></label>
+                                                <label><input name="radioStatus" type="radio"
+                                                        value=""><span>儲存訊息</span></label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
                                 <div class="btn_grp">
-                                    <button class="btn btn-orange">確認儲存</button>
+                                    <!--button class="btn btn-green">暫存</button>
+                                    <button class="btn">預覽</button-->
+                                    <button class="btn btn-orange">儲存發佈</button>
                                     <button class="btn btn-gray">重新設定</button>
                                 </div>
                             </div>
