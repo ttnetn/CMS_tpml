@@ -260,30 +260,29 @@
                                 </div>
                                 <div class="flex-form">
                                     <div class="form_grp">
-                                        <div class="form_title">審核狀態</div>
-                                        <div class="form_content">
-                                            <div class="radio_grp form_inline">
-                                                <label><input name="radioStatus" type="radio" value=""
-                                                        checked=""><span>報名未審(預設或不需要)</span></label>
-                                                <label><input name="radioStatus" type="radio"
-                                                        value=""><span>報名通過</span></label>
-                                                <label><input name="radioStatus" type="radio"
-                                                        value=""><span>取消報名</span></label>
-                                            </div>
-                                            <div class="log">
-                                                <ul>
-                                                    <li>
-                                                        請管理者輸入取消報名的說明，或者輸入不符合資格的說明
-                                                    </li>
-
-                                                </ul>
-                                            </div>
+                                        <div class="labelEffect">
+                                            <select id="" name="" class="used">
+                                                <option value="" selected="" disabled="disabled">尚未繳費
+                                                </option>
+                                                <option value="選項1">尚未繳費</option>
+                                                <option value="選項2">已經繳費</option>
+                                            </select>
+                                            <label>繳費狀態</label>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="btn_grp">
-                                    <button class="btn btn-orange">儲存報名資料</button>
-                                    <button class="btn btn-gray">重新設定</button>
+                                <br>
+                                <div class="form_content">
+                                    <div class="radio_grp form_inline">
+                                        <label><input name="radioStatus" type="radio" value=""
+                                                checked=""><span>報名未審(預設)</span></label>
+                                        <label><input name="radioStatus" type="radio" value=""><span>報名通過</span></label>
+                                        <label><input name="radioStatus" type="radio" value=""><span>取消報名</span></label>
+                                    </div>
+                                    <div class="btn_grp">
+                                        <button class="btn btn-green">暫存</button>
+                                        <button class="btn btn-orange">陳核</button>
+                                    </div>
                                 </div>
                             </div>
                             <div class="block">
